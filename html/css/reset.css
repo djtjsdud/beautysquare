@@ -6,6 +6,12 @@
   margin: 0; 
   padding: 0; 
 }
+a{
+  text-decoration: none;
+}
+ul, ol, dl{
+  list-style: none;
+}
 
 ul[role='list'], ol[role='list']{
   list-style: none; 

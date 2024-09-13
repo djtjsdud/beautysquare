@@ -1,19 +1,307 @@
 <?php include_once("./layout/header.html"); ?>
 <main>
+    <!-- ////////////메인 배너/////////// -->
     <section id="mainbanner">
-        <div class="mainbanner-list">
-            <ul>
-                <li class="mainbanner-01"><a href="#none"></a></li>
-                <li class="mainbanner-02"><a href="#none"></a></li>
-                <li class="mainbanner-03"><a href="#none"></a></li>
-            </ul>
+        <div id="mainbanner-swiper" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide01">
+                    <div class="main-container">
+                        <div class="mainbanner-text01">
+                            <h2 class="noto-sans-kr-600">뷰티의 중심지</h2>
+                            <p class="second-text noto-sans-kr-400">트렌디한 소비를 위해<br>사람들이 가장 많이 모이는 곳</p>
+                            <button>회원가입/로그인 하러가기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide02">
+                    <div class="main-container">
+                        <div class="mainbanner-text02">
+                            <h2 class="noto-sans-kr-600">뷰티의 중심지</h2>
+                            <p class="second-text noto-sans-kr-400">트렌디한 소비를 위해<br>사람들이 가장 많이 모이는 곳</p>
+                            <button class="button-black">회원가입/로그인 하러가기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide03">
+                    <div class="main-container">
+                        <div class="mainbanner-text03">
+                            <h2 class="noto-sans-kr-600">뷰티의 중심지</h2>
+                            <p class="second-text noto-sans-kr-400">트렌디한 소비를 위해<br>사람들이 가장 많이 모이는 곳</p>
+                            <button class="button-black">회원가입/로그인 하러가기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-button-next mainbanner-swiper-button-next"></div>
+            <div class="swiper-button-prev mainbanner-swiper-button-prev"></div>
+            <div class="swiper-pagination mainbanner-swiper-pagination"></div>
         </div>
-        <article mainbanner-text>
-            <h3 .shimmer>뷰티의 중심지</h3>
-            <p>트렌디한 소비를 위해
-                <br>사람들이 가장 많이 모이는 곳</p>
-            <p>다양한 뷰티 콘텐츠부터 쉽고 빠른 구매 서비스까지</p>
-        </article>
     </section>
+
+<!-- ///////////////베스트셀러/////////////// -->
+
+    <section id="best-seller">
+
+        <section class="best-seller-title">
+            <article class="main-container flex-container">
+                <h2 class="noto-sans-kr-600">BEST SELLER</h2>
+                <a href="#">더 많은 베스트 제품 보러가기</a>
+            </article>
+        </section>
+
+        <section id="best-seller-swiper" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide best-swiper-slide01">
+                    <ul class="slide-total">
+                        <li class="slide-left slide-left01">
+                            <a class="slide-left-img" href="#"></a>
+                            <div class="best-left-text">
+                                <p class="noto-sans-kr-800">BEST 01</p>
+                                <h2 class="noto-sans-kr-800">POSITIVE LIGHT 
+                                    <br>SILKY TOUCH HIGHLIGHTER
+                                </h2>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li class="slide-right slide-right01">
+                            <div class="best-right-box">
+                                <a href="#" class="best-brandname noto-sans-kr-600">Rare beauty</a>
+                                <a href="#" class="best-productname noto-sans-kr-600">포지티브 라이트 실키 터치 하이라이터</a>
+                                <a href="#" class="best-description">다양한 컬러의 톤별 맞춤 하이라이터
+                                    <br>본래 내 피부결인듯 물드는 광채</a>
+                                <img src="/images/best-small-img01.png" alt="베스트 셀러 작은 이미지">
+                                <ul>
+                                    <li class="color1"></li>
+                                    <li class="color2"></li>
+                                    <li class="color3"></li>
+                                    <li class="color4"></li>
+                                    <li class="color5"></li>
+                                    <li class="color6"></li>
+                                </ul>
+                            </div>
+                            <div class="best-right-box-hover">
+                                <a href="#">자세히 보기</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide best-swiper-slide02">
+                    <ul class="slide-total">
+                        <li class="slide-left slide-left02"></li>
+                        <li class="slide-right slide-right02">
+                            <div class="best-right-box">
+                                <a href="#" class="best-brandname noto-sans-kr-600">Rare beauty</a>
+                                <a href="#" class="best-productname noto-sans-kr-600">포지티브 라이트 실키 터치 하이라이터</a>
+                                <a href="#" class="best-description">다양한 컬러의 톤별 맞춤 하이라이터
+                                    <br>본래 내 피부결인듯 물드는 광채</a>
+                                <img src="/images/best-small-img01.png" alt="베스트 셀러 작은 이미지">
+                                <ul>
+                                    <li class="color1"></li>
+                                    <li class="color2"></li>
+                                    <li class="color3"></li>
+                                    <li class="color4"></li>
+                                    <li class="color5"></li>
+                                    <li class="color6"></li>
+                                </ul>
+                            </div>
+                            <div class="best-right-box-hover">
+                                <a href="#">자세히 보기</a>
+                            </div>
+                    
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide best-swiper-slide03">
+                    <ul class="slide-total">
+                        <li class="slide-left slide-left03"></li>
+                        <li class="slide-right slide-right03">
+                            <div class="best-right-box">
+                                <a href="#" class="best-brandname noto-sans-kr-600">Rare beauty</a>
+                                <a href="#" class="best-productname noto-sans-kr-600">포지티브 라이트 실키 터치 하이라이터</a>
+                                <a href="#" class="best-description">다양한 컬러의 톤별 맞춤 하이라이터
+                                    <br>본래 내 피부결인듯 물드는 광채</a>
+                                <img src="/images/best-small-img01.png" alt="베스트 셀러 작은 이미지">
+                                <ul>
+                                    <li class="color1"></li>
+                                    <li class="color2"></li>
+                                    <li class="color3"></li>
+                                    <li class="color4"></li>
+                                    <li class="color5"></li>
+                                    <li class="color6"></li>
+                                </ul>
+                            </div>
+                            <div class="best-right-box-hover">
+                                <a href="#">자세히 보기</a>
+                            </div>
+                    
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-button-next best-swiper-button-next"></div>
+            <div class="swiper-button-prev best-swiper-button-prev"></div>
+            <div class="swiper-pagination best-swiper-pagination"></div>
+        </section>
+    </section>
+
+<!-- //////////////////////신제품////////////////////////// -->
+
+    <section id="new-product">
+
+        <section class="new-title">
+            <article class="main-container flex-container">
+                <h2 class="noto-sans-kr-600">NEW ARRIVALS</h2>
+                <a href="#">더 많은 신제품 보러가기</a>
+            </article>
+        </section>
+
+        <section id="new-product-swiper" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide new-swiper-slide01">
+                    <div class="new-product-container">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="/images/new-product01.png" alt="신제품 이미지1">
+                                    <span class="new-brandname noto-sans-kr-600">헉슬리</span>
+                                    <span class="new-productname">솔리드 퍼퓸 모로칸 가드너</span>
+                                    <strong class="new-price noto-sans-kr-600">34,000원</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/new-product02.png" alt="신제품 이미지2">
+                                    <span class="new-brandname noto-sans-kr-600">힌스</span>
+                                    <span class="new-productname">듀이 리퀴드 치크</span>
+                                    <strong class="new-price new-price-change01 noto-sans-kr-600">15,343원<s>19,000원</s></strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/new-product03.png" alt="신제품 이미지3">
+                                    <span class="new-brandname noto-sans-kr-600">나스</span>
+                                    <span class="new-productname">나스 쿼드 아이섀도우</span>
+                                    <strong class="new-price noto-sans-kr-600">70,000원</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/new-product04.png" alt="신제품 이미지4">
+                                    <span class="new-brandname noto-sans-kr-600">프레시안</span>
+                                    <span class="new-productname">에그라이크 톤업 쿠션</span>
+                                    <strong class="new-price noto-sans-kr-600">33,250원</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/new-product05.png" alt="신제품 이미지5">
+                                    <span class="new-brandname noto-sans-kr-600">헤라</span>
+                                    <span class="new-productname">헤라 블러쉬</span>
+                                    <strong class="new-price noto-sans-kr-600">50,000원</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide new-swiper-slide02">
+                    <div class="new-product-container">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="/images/new-product01.png" alt="신제품 이미지1">
+                                    <span class="new-brandname noto-sans-kr-600">헉슬리</span>
+                                    <span class="new-productname">솔리드 퍼퓸 모로칸 가드너</span>
+                                    <span class="new-price noto-sans-kr-600">34,000원</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/new-product02.png" alt="신제품 이미지2">
+                                    <span class="new-brandname noto-sans-kr-600">힌스</span>
+                                    <span class="new-productname">듀이 리퀴드 치크</span>
+                                    <span class="new-price noto-sans-kr-600">15,343원</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/new-product03.png" alt="신제품 이미지3">
+                                    <span class="new-brandname noto-sans-kr-600">나스</span>
+                                    <span class="new-productname">나스 쿼드 아이섀도우</span>
+                                    <span class="new-price noto-sans-kr-600">70,000원</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/new-product04.png" alt="신제품 이미지4">
+                                    <span class="new-brandname noto-sans-kr-600">프레시안</span>
+                                    <span class="new-productname">에그라이크 톤업 쿠션</span>
+                                    <span class="new-price noto-sans-kr-600">33,250원</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/new-product05.png" alt="신제품 이미지5">
+                                    <span class="new-brandname noto-sans-kr-600">헤라</span>
+                                    <span class="new-productname">헤라 블러쉬</span>
+                                    <span class="new-price noto-sans-kr-600">50,000원</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide new-swiper-slide03">
+                    <div class="new-product-container">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="/images/new-product01.png" alt="신제품 이미지1">
+                                    <span class="new-brandname noto-sans-kr-600">헉슬리</span>
+                                    <span class="new-productname">솔리드 퍼퓸 모로칸 가드너</span>
+                                    <span class="new-price noto-sans-kr-600">34,000원</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/new-product02.png" alt="신제품 이미지2">
+                                    <span class="new-brandname noto-sans-kr-600">힌스</span>
+                                    <span class="new-productname">듀이 리퀴드 치크</span>
+                                    <span class="new-price noto-sans-kr-600">15,343원</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/new-product03.png" alt="신제품 이미지3">
+                                    <span class="new-brandname noto-sans-kr-600">나스</span>
+                                    <span class="new-productname">나스 쿼드 아이섀도우</span>
+                                    <span class="new-price noto-sans-kr-600">70,000원</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/new-product04.png" alt="신제품 이미지4">
+                                    <span class="new-brandname noto-sans-kr-600">프레시안</span>
+                                    <span class="new-productname">에그라이크 톤업 쿠션</span>
+                                    <span class="new-price noto-sans-kr-600">33,250원</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/new-product05.png" alt="신제품 이미지5">
+                                    <span class="new-brandname noto-sans-kr-600">헤라</span>
+                                    <span class="new-productname">헤라 블러쉬</span>
+                                    <span class="new-price noto-sans-kr-600">50,000원</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next new-swiper-button-next"></div>
+            <div class="swiper-button-prev new-swiper-button-prev"></div>
+            <div class="swiper-pagination new-swiper-pagination"></div>
+        </section>
+
+    </section>
+
+<!-- ///////////////////////미들 배너////////////////////// -->
+
+    <section id="middlebanner">
+        <div class="mainbanner-box">
+            <div class="middlebanner-container">
+                <div class="middlebanner-text">
+                    <h2><a href="#">라이트 리플렉팅 파운데이션</a></h2>
+                    <p>빛을 반사해 본연의 생기와 아름다운 피부결을 표현하는 #빛결파데</p>
+                </div>
+                <img src="/images/middle-banner-product-img.png" alt="미들 배너 제품 누끼 이미지">
+            </div>
+        </div>
+    </section>
+
 </main>
 <?php include_once("./layout/footer.html"); ?>

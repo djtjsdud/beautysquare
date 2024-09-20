@@ -59,7 +59,9 @@ var new_swiper = new Swiper("#new-product-swiper", {
 // ////////////////////////////////////////맞춤형 추천
 var swiper = new Swiper("#custom-swiper", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerGroup : 1,
+    spaceBetween: 20,
+    // loop: true,
     freeMode: true,
     pagination: {
         el: "#custom-swiper .custom-swiper-pagination",

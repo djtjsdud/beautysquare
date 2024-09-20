@@ -1,0 +1,312 @@
+<?php include_once("../layout/header.html"); ?>
+<main>
+    <section id="b-board">
+
+        <section class="b-board-title">
+            <div class="b-board-text">
+                <h2 class="noto-sans-kr-500">BULLETINE BOARD</h2>
+                <p>다양한 뷰티 정보부터 화장법 등 모든 뷰티 관련 소식을 자유롭게 공유할 수 있는 참여 게시판입니다. 
+                    <br>나만의 뷰티 노하우를 담은 글을 게시해보세요.</p>
+            </div>
+        </section>
+
+        <section class="b-board-popular-posts">
+            <div class="b-popular-posts-title noto-sans-kr-500">인기 게시글</div>
+            <div class="main-container">
+                <ul class="photo-posts flex-container">
+                    <li>
+                        <a href="#"><img src="/images/posts-img1.jpg" alt="인기 게시글 이미지1"></a>
+                        <div class="text-box">
+                            <a href="#">
+                                <span class="post-title noto-sans-kr-500">컬러 립밤 추천</span>
+                                <span class="post-text">예전부터 가지고 싶었는데 미루고 미루다 드디어 장만함! 이거 궁금해 하는 사람...</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/images/post-img2.jpg" alt="인기 게시글 이미지2"></a>
+                        <div class="text-box">
+                            <a href="#">
+                                <span class="post-title noto-sans-kr-500">컬러 립밤 추천</span>
+                                <span class="post-text">예전부터 가지고 싶었는데 미루고 미루다 드디어 장만함! 이거 궁금해 하는 사람...</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/images/posts-img3.jpg" alt="인기 게시글 이미지3"></a>
+                        <div class="text-box">
+                            <a href="#">
+                                <span class="post-title noto-sans-kr-500">컬러 립밤 추천</span>
+                                <span class="post-text">예전부터 가지고 싶었는데 미루고 미루다 드디어 장만함! 이거 궁금해 하는 사람...</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/images/posts-img4.jpg" alt="인기 게시글 이미지4"></a>
+                        <div class="text-box">
+                            <a href="#">
+                                <span class="post-title noto-sans-kr-500">컬러 립밤 추천</span>
+                                <span class="post-text">예전부터 가지고 싶었는데 미루고 미루다 드디어 장만함! 이거 궁금해 하는 사람...</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="text-posts">
+                    <li>
+                        <a href="#">
+                            <span class="noto-sans-kr-500">롬앤 콜라보 브랜드 방금 공개됨!</span>
+                            <span><u>더보기</u></span>
+                        </a>
+                        <p><a href="#">이나피스퀘어라는데, 평소에 알고 있었던 사람 있어? 나는 이번에 처음 들</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="noto-sans-kr-500">롬앤 콜라보 브랜드 방금 공개됨!</span>
+                            <span><u>더보기</u></span>
+                        </a>
+                        <p><a href="#">이나피스퀘어라는데, 평소에 알고 있었던 사람 있어? 나는 이번에 처음 들... </a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="noto-sans-kr-500">롬앤 콜라보 브랜드 방금 공개됨!</span>
+                            <span><u>더보기</u></span>
+                        </a>
+                        <p><a href="#">이나피스퀘어라는데, 평소에 알고 있었던 사람 있어? 나는 이번에 처음 들... </a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="noto-sans-kr-500">롬앤 콜라보 브랜드 방금 공개됨!</span>
+                            <span><u>더보기</u></span>
+                        </a>
+                        <p><a href="#">이나피스퀘어라는데, 평소에 알고 있었던 사람 있어? 나는 이번에 처음 들... </a></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="b-board-type-posts">
+            <div class="container">
+                <!-- outer Tabs -->
+                <ul class="nav nav-tabs justify-content-center posts-type-button" id="myTab" role="tablist">
+                    <li class="nav-item noto-sans-kr-500" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">포토 타입 게시글</a>
+                    </li>
+                    <li class="nav-item noto-sans-kr-500" role="presentation">
+                        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">텍스트 타입 게시글</a>
+                    </li>
+                </ul>
+                <!-- outer Tab Content -->
+                <div class="tab-content main-container" id="myTabContent">
+                    <!-- 포토 타입 게시글 탭  -->
+                    <div class="tab-pane fade show active type-photo-posts" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="b-board-search-box">
+                            <form action id="b-board-search">
+                                <input type="text" placeholder="원하는 정보의 키워드를 입력하세요.">
+                                <button class="i-search"></button>
+                            </form>
+                        </div>
+                        <ul class="photo-type-img-total">
+                            <li>
+                                <a href="#">
+                                    <img src="/images/photo-type-img1.jpg" alt="">
+                                </a>
+                                <div class="photo-type-text-box">
+                                    <strong>겨울철 립밤 추천합니다.</strong>
+                                    <a class="ellipsis" href="#">제가 써본 립밤 중에 가장 보습력이 강하면서도 가벼워서 사용감이 매우 좋아요.</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/images/photo-type-img2.jpg" alt="">
+                                </a>
+                                <div class="photo-type-text-box">
+                                    <strong>겨울철 립밤 추천합니다.</strong>
+                                    <a class="ellipsis">제가 써본 립밤 중에 가장 보습력이 강하면서도 가벼워서 사용감이 매우 좋아요.</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/photo-type-img3.jpg" alt="">
+                                </a>
+                                <div class="photo-type-text-box">
+                                    <strong>겨울철 립밤 추천합니다.</strong>
+                                    <a class="ellipsis">제가 써본 립밤 중에 가장 보습력이 강하면서도 가벼워서 사용감이 매우 좋아요.</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/photo-type-img4.jpg" alt="">
+                                </a>
+                                <div class="photo-type-text-box">
+                                    <strong>겨울철 립밤 추천합니다.</strong>
+                                    <a class="ellipsis">제가 써본 립밤 중에 가장 보습력이 강하면서도 가벼워서 사용감이 매우 좋아요.</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/photo-type-img5.jpg" alt="">
+                                </a>
+                                <div class="photo-type-text-box">
+                                    <strong>겨울철 립밤 추천합니다.</strong>
+                                    <a class="ellipsis">제가 써본 립밤 중에 가장 보습력이 강하면서도 가벼워서 사용감이 매우 좋아요.</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/photo-type-img6.jpg" alt="">
+                                </a>
+                                <div class="photo-type-text-box">
+                                    <strong>겨울철 립밤 추천합니다.</strong>
+                                    <a class="ellipsis">제가 써본 립밤 중에 가장 보습력이 강하면서도 가벼워서 사용감이 매우 좋아요.</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/photo-type-img7.jpg" alt="">
+                                </a>
+                                <div class="photo-type-text-box">
+                                    <strong>겨울철 립밤 추천합니다.</strong>
+                                    <a class="ellipsis">제가 써본 립밤 중에 가장 보습력이 강하면서도 가벼워서 사용감이 매우 좋아요.</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/photo-type-img8.jpg" alt="">
+                                </a>
+                                <div class="photo-type-text-box">
+                                    <strong>겨울철 립밤 추천합니다.</strong>
+                                    <a class="ellipsis">제가 써본 립밤 중에 가장 보습력이 강하면서도 가벼워서 사용감이 매우 좋아요.</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/photo-type-img9.jpg" alt="">
+                                </a>
+                                <div class="photo-type-text-box">
+                                    <strong>겨울철 립밤 추천합니다.</strong>
+                                    <a class="ellipsis">제가 써본 립밤 중에 가장 보습력이 강하면서도 가벼워서 사용감이 매우 좋아요.</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/images/photo-type-img10.jpg" alt="">
+                                </a>
+                                <div class="photo-type-text-box">
+                                    <strong>겨울철 립밤 추천합니다.</strong>
+                                    <a class="ellipsis">제가 써본 립밤 중에 가장 보습력이 강하면서도 가벼워서 사용감이 매우 좋아요.</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <nav aria-label="Page navigation example" class="photo-type-pagination">
+                                <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- 텍스트 타입 게시글 탭  -->
+                    <div class="tab-pane fade type-text-posts" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="b-board-search-box">
+                            <form action id="b-board-search">
+                                <input type="text" placeholder="원하는 정보의 키워드를 입력하세요.">
+                                <button class="i-search"></button>
+                            </form>
+                        </div>
+                        <table class="table main-container">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="cs-contents-indent">분류</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">작성자</th>
+                                    <th scope="col">작성일</th>
+                                    <th scope="col">좋아요</th>
+                                    <th scope="col">댓글</th>
+                                    <th scope="col">조회</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="cs-contents-indent">[추천부탁]</th>
+                                    <td><a href="#">탁한 브라운 계열 팔레트 뭐가 있을까요?</a></td>
+                                    <td>심채림</td>
+                                    <td>2024-11-29</td>
+                                    <td>23</td>
+                                    <td>5</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="cs-contents-indent">[제품추천]</th>
+                                    <td><a href="#">바세린 선크림 너무 좋아요.</a></td>
+                                    <td>박지혜</td>
+                                    <td>2024-11-20</td>
+                                    <td>100</td>
+                                    <td>13</td>
+                                    <td>340</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="cs-contents-indent">[추천부탁]</th>
+                                    <td><a href="#">탄 피부에 좋은 제품 추천 부탁드려요.</a></td>
+                                    <td>김소정</td>
+                                    <td>2024-11-28</td>
+                                    <td>56</td>
+                                    <td>23</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="cs-contents-indent">[잡담]</th>
+                                    <td><a href="#">수딩크림이랑 밤타입 크림이랑 섞어서 발라도 되나요?</a></td>
+                                    <td>이세현</td>
+                                    <td>2024-11-10</td>
+                                    <td>230</td>
+                                    <td>20</td>
+                                    <td>902</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="cs-contents-indent">[잡담]</th>
+                                    <td><a href="#">나스 파운데이션 입구부분 너무 불편한 것 같아</a></td>
+                                    <td>전유진</td>
+                                    <td>2024-11-15</td>
+                                    <td>442</td>
+                                    <td>14</td>
+                                    <td>1089</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="cs-contents-indent">[추천부탁]</th>
+                                    <td><a href="#">헤라 란제리 사고 싶은데 가격 때문에 고민중이야</a></td>
+                                    <td>이채린</td>
+                                    <td>2024-11-06</td>
+                                    <td>904</td>
+                                    <td>27</td>
+                                    <td>2094</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <nav aria-label="Page navigation example" class="photo-type-pagination">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+</main>
+<?php include_once("../layout/footer.html"); ?>

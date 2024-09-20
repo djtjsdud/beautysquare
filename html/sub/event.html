@@ -1,0 +1,89 @@
+<?php include_once("../layout/header.html"); ?>
+<section id="event">
+
+    <section class="event-title">
+        <div class="event-title-text">
+            <h2 class="noto-sans-kr-500">이벤트</h2>
+            <p>진행중인 이벤트를 확인해보세요.</p>
+        </div>
+    </section>
+
+    <section class="event-tabs">
+        <div class="container">
+            <!-- outer Tabs -->
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item noto-sans-kr-500" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">진행중인 이벤트</a>
+                </li>
+                <li class="nav-item noto-sans-kr-500" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">종료된 이벤트</a>
+                </li>
+            </ul>
+            <!-- outer Tab Content -->
+            <div class="tab-content main-container" id="myTabContent">
+                <!-- 진행중인 이벤트 탭  -->
+                <div class="tab-pane fade show active event-ing" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="/images/event banner1.jpg" alt="키엘 브랜드 콜라보 이벤트 배너">
+                                <span class="eventbanner-title">beauty square 단독 첫 공개 | 키엘 울트라 스킨케어 세트</span>
+                                <span class="eventbanner-content">2024-11-01 ~ 2024-11-10</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/images/event banner2.jpg" alt="첫 구매 이벤트 배너">
+                                <span class="eventbanner-title">첫 구매 배송비 감사 포인트 | 첫 구매 이벤트</span>
+                                <span class="eventbanner-content">2024-11-08 ~ 2024-11-12</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/images/event banner4.jpg" alt="첫 게시글 이벤트 배너">
+                                <span class="eventbanner-title">BULLETINE BOARD에 게시글 업로드 하고 쿠폰받기</span>
+                                <span class="eventbanner-content">2024-11-05 ~ 2024-11-18</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/images/event banner6.jpg" alt="뷰티 유튜버 콜라보 이벤트 배너">
+                                <span class="eventbanner-title">beauty square X 뷰티 유튜버 "샤인리" | 할인 쿠폰 이벤트</span>
+                                <span class="eventbanner-content">2024-11-20 ~ 2024-11-22</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/images/event banner5.jpg" alt="브랜드 콜라보 리뷰 이벤트 배너">
+                                <span class="eventbanner-title">beauty square X StriVectin | 사은품 증정 이벤트</span>
+                                <span class="eventbanner-content">2024-12-03 ~ 2024-12-06</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/images/event banner3.jpg" alt="회원가입 이벤트 배너">
+                                <span class="eventbanner-title">배송비 무료 쿠폰 | 회원가입 이벤트</span>
+                                <span class="eventbanner-content">2024-12-03 ~ 2024-12-06</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 종료된 이벤트 탭  -->
+                <div class="tab-pane fade event-end" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="/images/event banner7.jpg" alt="퍼스널 컬러 무료 진단 이벤트">
+                                <span class="eventbanner-title">응모하고 전문가에게 퍼스널 컬러 진단 받기</span>
+                                <span class="eventbanner-content">2024-11-01 ~ 2024-11-10</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</section>
+<?php include_once("../layout/footer.html"); ?>

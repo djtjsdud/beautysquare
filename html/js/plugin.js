@@ -27,10 +27,10 @@ var best_swiper = new Swiper("#best-seller-swiper", {
     spaceBetween: 30,
     centeredSlides: true,
     loop : true,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     pagination: {
         el: "#best-seller-swiper .best-swiper-pagination",
         clickable: true,
@@ -100,4 +100,20 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // 관찰할 요소 추가
     observer.observe(img);
+});
+
+// 베스트(서브페이지)
+
+var new_swiper = new Swiper("#sub-best-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: "#sub-best-swiper .sub-best-swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: "#sub-best-swiper .sub-best-swiper-button-next",
+        prevEl: "#sub-best-swiper .sub-best-swiper-button-prev",
+    },
 });

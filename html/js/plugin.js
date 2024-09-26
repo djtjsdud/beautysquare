@@ -1,4 +1,4 @@
-// /////////////////////////////////////메인배너
+/////////////////////////////////////메인배너
 var mainbanner_swiper = new Swiper("#mainbanner-swiper", {
     scrollbar: {
     el: "#mainbanner-swiper .swiper-scrollbar",
@@ -27,10 +27,10 @@ var best_swiper = new Swiper("#best-seller-swiper", {
     spaceBetween: 30,
     centeredSlides: true,
     loop : true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
     pagination: {
         el: "#best-seller-swiper .best-swiper-pagination",
         clickable: true,
@@ -43,7 +43,8 @@ var best_swiper = new Swiper("#best-seller-swiper", {
 
 ///////////////////////////////////////////신제품
 var new_swiper = new Swiper("#new-product-swiper", {
-    slidesPerView: 1,
+    slidesPerView: 5,
+    slidesPerGroup: 3,
     spaceBetween: 30,
     loop: true,
     pagination: {
@@ -53,6 +54,22 @@ var new_swiper = new Swiper("#new-product-swiper", {
     navigation: {
         nextEl: "#new-product-swiper .new-swiper-button-next",
         prevEl: "#new-product-swiper .new-swiper-button-prev",
+    },
+    breakpoints: {
+        200: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        // 화면 너비가 640px 이상일 때
+        580: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        // 화면 너비가 768px 이상일 때
+        768: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+        },
     },
 });
 

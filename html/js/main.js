@@ -57,6 +57,10 @@ $(function() {
         $dt.removeClass('active');
         $dd.slideUp(800);
     });
+
+    $('.nav-Btn').on('click', function(){
+        $(this).toggleClass('slideOn');
+    });
 });
 
 // 

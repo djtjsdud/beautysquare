@@ -32,61 +32,74 @@
 </head>
 <body class="noto-sans-kr-400">
 
-    <header id="header" class="position-absolute top-0 start-0">
-        <div class="header-container">
-            <h1><a href="/"><img src="/images/mainlogo-black.png" alt="메인로고 이미지"></a></h1>
+    <!-- 모바일 헤더 -->
+    <section id="m-header" class="d-lg-none">
+        <div class="header-container mx-auto my-0">
+            <div class="d-flex align-items-center px-4 py-4">
+                <span class="ios-back"></span>
+                <h1>
+                    <a href="/">
+                        <img src="/images/mainlogo-black.png" alt="메인로고 이미지">
+                    </a>
+                </h1>
+            </div>
+            <button class="nav-Btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav>
                 <ul class="depth-01">
                     <li>
-                        <a href="#" class="noto-sans-kr-500">BRAND</a>
-                        <ul class="depth-02">
-                            <li><a href="#">ABOUT US</a></li>
+                        <a href="#" class="noto-sans-kr-500 text-black py-4 px-4 d-block m-menu-border">BRAND</a>
+                        <ul class="depth-02 px-4 small-menu01">
+                            <li><a href="#" class="text-black d-block py-3 m-small-menu-border">ABOUT US</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="noto-sans-kr-500">PRODUCT</a>
-                        <ul class="depth-02">
-                            <li><a href="/sub/best.html">BEST</a></li>
-                            <li><a href="/sub/new.html">NEW</a></li>
-                            <li><a href="/sub/skincare.html">스킨케어</a></li>
-                            <li><a href="/sub/make_up.html">메이크업</a></li>
-                            <li><a href="/sub/haircare_etc.html">헤어케어/기타</a></li>
+                        <a href="#" class="noto-sans-kr-500 text-black py-4 px-4 d-block m-menu-border">PRODUCT</a>
+                        <ul class="depth-02 px-4 small-menu02">
+                            <li><a href="/sub/best.html"  class=" text-black d-block py-3 m-small-menu-border">BEST</a></li>
+                            <li><a href="/sub/new.html"  class=" text-black d-block py-3 m-small-menu-border">NEW</a></li>
+                            <li><a href="/sub/skincare.html"  class=" text-black d-block py-3 m-small-menu-border">스킨케어</a></li>
+                            <li><a href="/sub/make_up.html"  class=" text-black d-block py-3 m-small-menu-border">메이크업</a></li>
+                            <li><a href="/sub/haircare_etc.html"  class=" text-black d-block py-3 m-small-menu-border">헤어케어/기타</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="noto-sans-kr-500">PICK</a>
-                        <ul class="depth-02">
-                            <li><a href="#">맞춤형 추천</a></li>
-                            <li><a href="#">사용자 PICK</a></li>
+                        <a href="#" class="noto-sans-kr-500 text-black py-4 px-4 d-block m-menu-border">PICK</a>
+                        <ul class="depth-02 px-4 small-menu03">
+                            <li><a href="#"  class=" text-black d-block py-3 m-small-menu-border">맞춤형 추천</a></li>
+                            <li><a href="#" class=" text-black d-block py-3 m-small-menu-border">사용자 PICK</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="/sub/bulletine_board.html" class="noto-sans-kr-500">BULLETINE BOARD</a>
+                        <a href="/sub/bulletine_board.html" class="noto-sans-kr-500 text-black py-4 px-4 d-block m-menu-border">BULLETINE BOARD</a>
                     </li>
                     <li>
-                        <a href="#" class="noto-sans-kr-500">NEWS</a>
-                        <ul class="depth-02">
-                            <li><a href="/sub/preview.html">PREVIEW</a></li>
-                            <li><a href="/sub/brandevent.html">BRAND EVENTS</a></li>
+                        <a href="#" class="noto-sans-kr-500 text-black py-4 px-4 d-block m-menu-border">NEWS</a>
+                        <ul class="depth-02 px-4 small-menu04">
+                            <li><a href="/sub/preview.html"  class=" text-black d-block py-3 m-small-menu-border">PREVIEW</a></li>
+                            <li><a href="/sub/brandevent.html" class=" text-black d-block py-3 m-small-menu-border">BRAND EVENTS</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="noto-sans-kr-500">COMMUNITY</a>
-                        <ul class="depth-02">
-                            <li><a href="/sub/notice.html">공지사항</a></li>
-                            <li><a href="/sub/faq.html">FAQ</a></li>
-                            <li><a href="/sub/cs.html">1:1 CS</a></li>
-                            <li><a href="/sub/event.html">이벤트</a></li>
+                        <a href="#" class="noto-sans-kr-500 text-black py-4 px-4 d-block m-menu-border">COMMUNITY</a>
+                        <ul class="depth-02 px-4 small-menu05">
+                            <li><a href="/sub/notice.html" class=" text-black d-block py-3 m-small-menu-border">공지사항</a></li>
+                            <li><a href="/sub/faq.html" class=" text-black d-block py-3 m-small-menu-border">FAQ</a></li>
+                            <li><a href="/sub/cs.html" class=" text-black d-block py-3 m-small-menu-border">1:1 CS</a></li>
+                            <li><a href="/sub/event.html" class=" text-black d-block py-3 m-small-menu-border">이벤트</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
             <div class="fake"></div>
-            <ul class="icon-list">
+            <!-- <ul class="icon-list">
                     <li class="first-icon"><a href="#none"><img src="/images/mypage-icon.svg" alt="마이페이지 아이콘"></a></li>
                     <li class="second-icon"><a href="#none"><img src="/images/search-icon.svg" alt="검색 아이콘"></a></li>
                     <li class="third-icon"><a href="#none"><img src="/images/shopping-icon.svg" alt="장바구니 아이콘"></a></li>
-            </ul>
+            </ul> -->
             <!-- <div class="search-container">
                 <div class="search-box">
                     <input type="text" placeholder="검색어를 입력하세요">
@@ -94,4 +107,73 @@
                 </div>
             </div> -->
         </div>
-    </header>
+    </section>
+    
+
+
+    <!-- 웹 헤더 -->
+
+        <header id="header" class="d-none d-lg-block bg-white">
+            <div class="header-container d-flex justify-content-between align-items-center">
+                <h1 class="d-flex justify-content-center flex-column"><a href="/"><img src="/images/mainlogo-black.png" alt="메인로고 이미지" class="mb-1 me-5"></a></h1>
+                <nav>
+                    <ul class="depth-01 d-flex text-center">
+                        <li class="col px-lg-3 px-xl-4">
+                            <a href="#" class="noto-sans-kr-500">BRAND</a>
+                            <ul class="depth-02">
+                                <li><a href="#">ABOUT US</a></li>
+                            </ul>
+                        </li>
+                        <li class="col px-lg-3 px-xl-4">
+                            <a href="#" class="noto-sans-kr-500">PRODUCT</a>
+                            <ul class="depth-02">
+                                <li><a href="/sub/best.html">BEST</a></li>
+                                <li><a href="/sub/new.html">NEW</a></li>
+                                <li><a href="/sub/skincare.html">스킨케어</a></li>
+                                <li><a href="/sub/make_up.html">메이크업</a></li>
+                                <li><a href="/sub/haircare_etc.html">헤어케어/기타</a></li>
+                            </ul>
+                        </li>
+                        <li class="col px-lg-3 px-xl-4">
+                            <a href="#" class="noto-sans-kr-500">PICK</a>
+                            <ul class="depth-02">
+                                <li><a href="#">맞춤형 추천</a></li>
+                                <li><a href="#">사용자 PICK</a></li>
+                            </ul>
+                        </li>
+                        <li  class="col px-lg-3 px-xl-4">
+                            <a href="/sub/bulletine_board.html" class="noto-sans-kr-500">BULLETINE BOARD</a>
+                        </li>
+                        <li class="col px-lg-3 px-xl-4">
+                            <a href="#" class="noto-sans-kr-500">NEWS</a>
+                            <ul class="depth-02">
+                                <li><a href="/sub/preview.html">PREVIEW</a></li>
+                                <li><a href="/sub/brandevent.html">BRAND EVENTS</a></li>
+                            </ul>
+                        </li>
+                        <li class="col px-lg-3 px-xl-4">
+                            <a href="#" class="noto-sans-kr-500">COMMUNITY</a>
+                            <ul class="depth-02">
+                                <li><a href="/sub/notice.html">공지사항</a></li>
+                                <li><a href="/sub/faq.html">FAQ</a></li>
+                                <li><a href="/sub/cs.html">1:1 CS</a></li>
+                                <li><a href="/sub/event.html">이벤트</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="fake"></div>
+                <ul class="icon-list d-flex justify-content-between align-items-center">
+                        <li class="first-icon"><a href="#none"><img src="/images/mypage-icon.svg" alt="마이페이지 아이콘"></a></li>
+                        <li class="second-icon"><a href="#none"><img src="/images/search-icon.svg" alt="검색 아이콘"></a></li>
+                        <li class="third-icon"><a href="#none"><img src="/images/shopping-icon.svg" alt="장바구니 아이콘"></a></li>
+                </ul>
+                <!-- <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" placeholder="검색어를 입력하세요">
+                        <button id="search-close">X</button>
+                    </div>
+                </div> -->
+            </div>
+        </header>
+

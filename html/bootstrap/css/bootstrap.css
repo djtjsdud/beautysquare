@@ -216,7 +216,7 @@ hr {
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   font-weight: 500;
   line-height: 1.2;
   color: var(--bs-heading-color);
@@ -8160,8 +8160,8 @@ textarea.form-control-lg {
 }
 
 .px-5 {
-  padding-right: 3rem !important;
-  padding-left: 3rem !important;
+  padding-right: 3.125rem !important;
+  padding-left: 3.125rem !important;
 }
 
 .py-0 {

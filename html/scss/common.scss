@@ -5,12 +5,19 @@ body, html{
 // ////////////////////////공통클래스////////////////////////
 .ellipsis {
     display: -webkit-box; /* Flexbox 형태로 설정 */
-    -webkit-box-orient: vertical; /* 세로 방향으로 설정 */
-    -webkit-line-clamp: 2; /* 최대 두 줄로 제한 */
-    overflow: hidden; /* 넘치는 부분 숨기기 */
-    text-overflow: ellipsis; /* 말줄임표 추가 */
-    height: 3.5em; /* 두 줄 높이 설정 (line-height * 2) */
-    line-height: 1.5em; /* 줄 간격 설정 */
+    -webkit-box-orient: vertical; /* 수직 방향으로 정렬 */
+    -webkit-line-clamp: 2; /* 최대 2줄로 제한 */
+    overflow: hidden; /* 넘치는 내용 숨김 */
+    text-overflow: ellipsis; /* 말줄임 표시 */
+    height: 3rem; /* 두 줄에 맞는 높이 (폰트 크기에 따라 조정) */
+}
+.ellipsis2 {
+    display: block; /* 블록 요소로 설정 */
+    width: 100%; /* 부모 요소에 맞추어 너비 설정 */
+    max-width: 610px; /* 최대 너비 설정 */
+    overflow: hidden; /* 넘치는 내용 숨김 */
+    white-space: nowrap; /* 줄 바꿈 방지 */
+    text-overflow: ellipsis; /* 말줄임 표시 */
 }
 .main-container{
     max-width: 1600px;
@@ -144,7 +151,7 @@ body, html{
     display: flex;
     gap: 6px;
     position: absolute;
-    bottom: 210px;
+    top: 262px;
     left: calc(50% - 123px);
     transition: all 0.3s ease-in-out;
     opacity: 0;
@@ -268,4 +275,7 @@ body, html{
 }
 .disN{
     display: none;
+}
+.disB{
+    display: block;
 }

@@ -1,4 +1,4 @@
-/////////////////////////////////////메인배너
+// 메인배너
 var mainbanner_swiper = new Swiper("#mainbanner-swiper", {
     scrollbar: {
     el: "#mainbanner-swiper .swiper-scrollbar",
@@ -6,10 +6,10 @@ var mainbanner_swiper = new Swiper("#mainbanner-swiper", {
     spaceBetween: 30,
     centeredSlides: true,
     },
-    autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 6000,
+    //     disableOnInteraction: false,
+    // },
     pagination: {
         el: "#mainbanner-swiper .mainbanner-swiper-pagination",
         type: "fraction",
@@ -22,7 +22,7 @@ var mainbanner_swiper = new Swiper("#mainbanner-swiper", {
     loop : true
 });
 
-// //////////////////////////////////////베스트셀러
+// 베스트셀러
 var best_swiper = new Swiper("#best-seller-swiper", {
     spaceBetween: 30,
     centeredSlides: true,
@@ -41,7 +41,7 @@ var best_swiper = new Swiper("#best-seller-swiper", {
     },
 });
 
-///////////////////////////////////////////신제품
+//신제품
 var new_swiper = new Swiper("#new-product-swiper", {
     slidesPerView: 5,
     slidesPerGroup: 3,
@@ -56,17 +56,23 @@ var new_swiper = new Swiper("#new-product-swiper", {
         prevEl: "#new-product-swiper .new-swiper-button-prev",
     },
     breakpoints: {
-        200: {
+        100: {
+            slidesPerGroup: 1,
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 10,
         },
-        // 화면 너비가 640px 이상일 때
-        580: {
+        375: {
+            slidesPerGroup: 2,
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        // 화면 너비가 768px 이상일 때
-        768: {
+        580: {
+            slidesPerGroup: 3,
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        990: {
+            slidesPerGroup: 5,
             slidesPerView: 5,
             spaceBetween: 30,
         },
@@ -75,7 +81,7 @@ var new_swiper = new Swiper("#new-product-swiper", {
 
 // ////////////////////////////////////////맞춤형 추천
 var swiper = new Swiper("#custom-swiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     slidesPerGroup : 1,
     spaceBetween: 20,
     // loop: true,
@@ -87,6 +93,14 @@ var swiper = new Swiper("#custom-swiper", {
     scrollbar: {
         el: ".custom-swiper-scrollbar",
         hide: false,
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2, // 576 이상에서 2개
+        },
+        992: {
+            slidesPerView: 3, // 992 이상에서 3개
+        },
     },
 });
 

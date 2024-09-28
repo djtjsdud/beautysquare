@@ -14,12 +14,14 @@
                 transform: rotate(-45deg);
             }
             h1{
+                width: 100%;
                 a{
                     display: block;
                     img{
                         max-width: 280px;
                         min-width: 160px;
                         display: block;
+                        margin: 0 auto;
                     }
                 }
             }
@@ -37,7 +39,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            margin: 30px 20px;
+            margin: 24px 20px;
             &.slideOn{
                 right: 0;
                 span{
@@ -95,13 +97,13 @@
 
 #header {
     z-index: 99;
-    height: 120px;
+    height: 70px;
     position: relative;
     padding: 0 50px;
     .header-container {
         max-width: 1600px;
         width: 100%;
-        height: 120px;
+        height: 70px;
         margin: 0 auto;
         h1 {
             margin: 0;
@@ -110,6 +112,7 @@
                 width: max-content;
                 img {
                     display: block;
+                    width: 220px;
                 }
             }
         }
@@ -119,9 +122,8 @@
             }
             .depth-01 {
                 margin-bottom: 0;
-                padding: 30px 0;
                 &:hover .depth-02 {
-                    height: 240px;
+                    height: 200px;
                 }
                 > li {
                     position: relative;
@@ -130,15 +132,15 @@
                     }
                     > a {
                         display: block;
-                        line-height: 60px;
+                        line-height: 40px;
                         // padding: 0 30px;
                         color: #000;
-                        font-size: 1.25rem;
+                        font-size: 1.125rem;
                         width: max-content;
                         &::after{
                             content: "";
                             width: 0;
-                            height: 2px;
+                            height: 4px;
                             border-bottom: solid 2px #000;
                             display: block;
                             transition: all 0.2s linear;
@@ -155,12 +157,13 @@
                         transition: all 0.6s ease-in-out;
                         padding: 0;
                         z-index: 99;
-                        margin-top: 20px;
+                        margin-top: 10px;
                         li {
                             &:hover a{
                                 color: #ccc;
                             }
                             a {
+                                font-size: 1rem;
                                 display: block;
                                 line-height: 40px;
                                 color: #000;
@@ -202,7 +205,7 @@
 // 푸터 영역
 
 #footer{
-    padding: 100px 0;
+    padding: 100px 50px;
     .footer-container{
         max-width: 1600px;
         width: 100%;
@@ -210,7 +213,7 @@
         .footer-top{
             display: flex;
             justify-content: space-between;
-            border-bottom: solid 1px #000;
+            border-bottom: solid 1px #ddd;
             margin-bottom: 26px;
             .footer-menu{
                 display: flex;
@@ -221,7 +224,7 @@
                     a{
                         display: block;
                         color: #000;
-                        font-size: 16px;
+                        font-size: 1rem;
                     }
                 }
             }
@@ -229,6 +232,12 @@
                 display: flex;
                 li{
                     margin-left: 26px;
+                    a{
+                        display: block;
+                        img{
+                            display: block;
+                        }
+                    }
                 }
             }
         }
@@ -242,7 +251,7 @@
                     margin-left: 20px;
                     li{
                         margin-bottom: 6px;
-                        font-size: 16px;
+                        font-size: 1rem;
                         span{
                             margin-right: 12px;
                         }
@@ -252,10 +261,10 @@
             .footer-right{
                 .brand-number{
                     li{
-                        font-size: 16px;
+                        font-size: 1rem;
                         text-align: right;
                         strong{
-                            font-size: 26px;
+                            font-size: 1.625rem;
                         }
                     }
                 }

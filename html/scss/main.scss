@@ -26,6 +26,8 @@
     // ///////////메인 콘텐츠(메인 배너)///////////
 
     #mainbanner{
+        height: calc(100vh - 70px);
+        max-height: 800px;
         #mainbanner-swiper .swiper-button-next{
             color: #fff;
             bottom: 10%;
@@ -58,7 +60,7 @@
         }
         #mainbanner-swiper {
             width: 100%;
-            height: 88vh; // 전체 화면 높이
+            height: 100%; // 전체 화면 높이
             .swiper-wrapper {
                 height: 100%;
                 .swiper-slide01{
@@ -296,7 +298,7 @@
                     }
                     .best-description{
                         display: block;
-                        font-size: 1.25rem;
+                        font-size: 1.125rem;
                         color: #000;
                         // text-align: center;
                     }
@@ -548,9 +550,12 @@
     }
 }
 
-// ////////////////////////신제품////////////////////////////
+// 신제품
 
 #new-product{
+    background-color: #f5f5f5; 
+    padding: 0 50px;
+    position: relative;
     .new-title{
         width: 100%;
         height: 200px;
@@ -562,7 +567,6 @@
             h2{
                 font-size: 3.125rem;
                 margin-top: 80px;
-                margin-left: 50px;
             }
             a{
                 color: #000;
@@ -582,236 +586,136 @@
             }
         }
     }
+    .new-swiper-button-next{
+        position: absolute;
+        right: 80px;
+        top: 410px;
+        color: #848484;
+    }
+    .new-swiper-button-prev{
+        position: absolute;
+        left: 80px;
+        top: 410px;
+        color: #848484;
+    }
     #new-product-swiper{
+        max-width: 1600px;
         width: 100%;
-        height: 700px;
+        height: 650px;
         background-color: #F5F5F5;
-        .new-swiper-button-next{
-            right: 80px;
-            top: 250px;
-            color: #848484;
-        }
-        .new-swiper-button-prev{
-            left: 80px;
-            top: 250px;
-            color: #848484;
-        }
+        margin-top: 50px;
         .swiper-pagination-bullet-active{
             background: #000;
         }
         .new-swiper-pagination{
             bottom: 50px;
         }
-        .new-swiper-slide01{
-            background-color: #F5F5F5;
-            .new-product-container{
-                max-width: 1600px;
-                width: 100%;
-                margin: 0 auto;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                ul{
-                    padding: 0;
-                    display: flex;
-                    justify-content: space-between;
-                    gap: 30px;
-                    li{
-                        position: relative;
-                        width: 20%;
-                        a{
-                            display: block;
-                            img{
-                                width: 100%;
-                                display: block;
-                            }
-                        }
-                        &:hover .action-menu-button{
-                            opacity: 100%;
-                        }
-                        a{
-                            // display: block;
-                            .new-price-change01{
-                                s{
-                                    font-size: 1rem;
-                                    color: #5f5f5f;
-                                    margin-left: 10px;
-                                    font-weight: 400;
-                                }
-                                &::before{
-                                    content: "19%";
-                                    display: inline-block;
-                                    font-size: 1rem;
-                                    font-weight: 400;
-                                    margin-right: 10px;
-                                    color: #ff0000;
-                                }
-                            }
-                            .new-price-change02{
-                                s{
-                                    font-size: 1rem;
-                                    color: #5f5f5f;
-                                    margin-left: 10px;
-                                    font-weight: 400;
-                                }
-                                &::before{
-                                    content: "5%";
-                                    display: inline-block;
-                                    font-size: 1rem;
-                                    font-weight: 400;
-                                    margin-right: 10px;
-                                    color: #ff0000;
-                                }
-                            }
-                        }
+        .new-product-container{
+            .swiper-slide{
+                a{
+                    img{
+                        width: 100%;
+                        display: block;
                     }
                 }
-            }
-        }
-        .new-swiper-slide02{
-            background-color: #F5F5F5;
-            .new-product-container{
-                max-width: 1600px;
-                width: 100%;
-                margin: 0 auto;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                ul{
-                    display: flex;
-                    justify-content: space-between;
-                    gap: 30px;
-                    li{
-                        position: relative;
-                        width: 20%;
-                        a{
-                            display: block;
-                            img{
-                                width: 100%;
-                                display: block;
-                            }
+                &:hover .action-menu-button{
+                    opacity: 100%;
+                }
+                a{
+                    .new-price-change01{
+                        s{
+                            font-size: 1rem;
+                            color: #5f5f5f;
+                            margin-left: 10px;
+                            font-weight: 400;
                         }
-                        &:hover .action-menu-button{
-                            opacity: 100%;
-                        }
-                        a{
-                            // display: block;
-                            .new-price-change03{
-                                s{
-                                    font-size: 1rem;
-                                    color: #5f5f5f;
-                                    margin-left: 10px;
-                                    font-weight: 400;
-                                }
-                                &::before{
-                                    content: "19%";
-                                    display: inline-block;
-                                    font-size: 1rem;
-                                    font-weight: 400;
-                                    margin-right: 10px;
-                                    color: #ff0000;
-                                }
-                            }
-                            .new-price-change04{
-                                s{
-                                    font-size: 1rem;
-                                    color: #5f5f5f;
-                                    margin-left: 10px;
-                                    font-weight: 400;
-                                }
-                                &::before{
-                                    content: "5%";
-                                    display: inline-block;
-                                    font-size: 1rem;
-                                    font-weight: 400;
-                                    margin-right: 10px;
-                                    color: #ff0000;
-                                }
-                            }
+                        &::before{
+                            content: "19%";
+                            display: inline-block;
+                            font-size: 1rem;
+                            font-weight: 400;
+                            margin-right: 10px;
+                            color: #ff0000;
                         }
                     }
-                }
-            }
-        }
-        .new-swiper-slide03{
-            background-color: #F5F5F5;
-            .new-product-container{
-                max-width: 1600px;
-                width: 100%;
-                margin: 0 auto;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                ul{
-                    display: flex;
-                    justify-content: space-between;
-                    gap: 30px;
-                    li{
-                        position: relative;
-                        width: 20%;
-                        a{
-                            display: block;
-                            img{
-                                width: 100%;
-                                display: block;
-                            }
+                    .new-price-change02{
+                        s{
+                            font-size: 1rem;
+                            color: #5f5f5f;
+                            margin-left: 10px;
+                            font-weight: 400;
                         }
-                        &:hover .action-menu-button{
-                            opacity: 100%;
+                        &::before{
+                            content: "5%";
+                            display: inline-block;
+                            font-size: 1rem;
+                            font-weight: 400;
+                            margin-right: 10px;
+                            color: #ff0000;
                         }
-                        a{
-                            // display: block;
-                            .new-price-change05{
-                                s{
-                                    font-size: 1rem;
-                                    color: #5f5f5f;
-                                    margin-left: 10px;
-                                    font-weight: 400;
-                                }
-                                &::before{
-                                    content: "19%";
-                                    display: inline-block;
-                                    font-size: 1rem;
-                                    font-weight: 400;
-                                    margin-right: 10px;
-                                    color: #ff0000;
-                                }
-                            }
-                            .new-price-change06{
-                                s{
-                                    font-size: 1rem;
-                                    color: #5f5f5f;
-                                    margin-left: 10px;
-                                    font-weight: 400;
-                                }
-                                &::before{
-                                    content: "5%";
-                                    display: inline-block;
-                                    font-size: 1rem;
-                                    font-weight: 400;
-                                    margin-right: 10px;
-                                    color: #ff0000;
-                                }
-                            }
-                            .new-price-change07{
-                                s{
-                                    font-size: 1rem;
-                                    color: #5f5f5f;
-                                    margin-left: 10px;
-                                    font-weight: 400;
-                                }
-                                &::before{
-                                    content: "5%";
-                                    display: inline-block;
-                                    font-size: 1rem;
-                                    font-weight: 400;
-                                    margin-right: 10px;
-                                    color: #ff0000;
-                                }
-                            }
+                    }
+                    .new-price-change03{
+                        s{
+                            font-size: 1rem;
+                            color: #5f5f5f;
+                            margin-left: 10px;
+                            font-weight: 400;
+                        }
+                        &::before{
+                            content: "19%";
+                            display: inline-block;
+                            font-size: 1rem;
+                            font-weight: 400;
+                            margin-right: 10px;
+                            color: #ff0000;
+                        }
+                    }
+                    .new-price-change04{
+                        s{
+                            font-size: 1rem;
+                            color: #5f5f5f;
+                            margin-left: 10px;
+                            font-weight: 400;
+                        }
+                        &::before{
+                            content: "5%";
+                            display: inline-block;
+                            font-size: 1rem;
+                            font-weight: 400;
+                            margin-right: 10px;
+                            color: #ff0000;
+                        }
+                    }
+                    .new-price-change06{
+                        s{
+                            font-size: 1rem;
+                            color: #5f5f5f;
+                            margin-left: 10px;
+                            font-weight: 400;
+                        }
+                        &::before{
+                            content: "5%";
+                            display: inline-block;
+                            font-size: 1rem;
+                            font-weight: 400;
+                            margin-right: 10px;
+                            color: #ff0000;
+                        }
+                    }
+                    .new-price-change07{
+                        s{
+                            font-size: 1rem;
+                            color: #5f5f5f;
+                            margin-left: 10px;
+                            font-weight: 400;
+                        }
+                        &::before{
+                            content: "5%";
+                            display: inline-block;
+                            font-size: 1rem;
+                            font-weight: 400;
+                            margin-right: 10px;
+                            color: #ff0000;
                         }
                     }
                 }
@@ -859,6 +763,7 @@
 //브랜드이벤트
 
 #brandevents{
+    padding: 0 50px 120px;
     .brandevents-title{
         width: 100%;
         height: 200px;
@@ -870,13 +775,11 @@
             h2{
                 font-size: 3.125rem;
                 margin-top: 80px;
-                margin-left: 50px;
                 }
             a{
                 color: #000;
                 margin-top: 80px;
                 font-size: 1.25rem;
-                margin-left: 50px;
                 &::after{
                     content: "";
                     display: inline-block;
@@ -893,26 +796,29 @@
     #brandevents-first-contents{
         background-color: #fff;
         width: 100%;
-        height: 700px;
-        padding: 50px;
         .brandevents-container{
             max-width: 1600px;
             width: 100%;
-            margin: 0 auto;
+            margin: 50px auto 80px;
             height: 100%;
             position: relative;
-            gap: 30px;
+            gap: 50px;
             .brandevents-left{
+                height: 580px;
                 span{
                     display: block;
                     overflow: hidden;
+                    height: 100%;
                     a{
                         display: block;
                         position: relative;
+                        height: 100%;
                         .brand-model-img{
                             display: block;
                             transform: scale(1);
                             transition: all 0.6s ease-in-out;
+                            object-fit: cover;
+                            height: 100%;
                         }
                         .brand-logo-img{
                             position: absolute;
@@ -966,12 +872,24 @@
                 ul{
                     display: flex;
                     justify-content: center;
-                    gap: 30px;
+                    gap: 20px;
                     margin: 0;
                     padding: 0;
+                    height: 347px;
                     li{
                         width: 33.333%;
+                        height: 100%;
                         position: relative;
+                        a{
+                            display: block;
+                            height: 100%;
+                            img{
+                                width: 100%;
+                                display: block;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
                         &:hover .brandevents-action-button{
                             opacity: 100%;
                         }
@@ -1003,30 +921,33 @@
     #brandevents-second-contents{
         background-color: #fff;
         width: 100%;
-        height: 700px;
-        padding: 50px;
         .brandevents-container{
             max-width: 1600px;
             width: 100%;
-            margin: 0 auto;
+            margin: 50px auto 80px;
             height: 100%;
             position: relative;
-            gap: 30px;
+            gap: 50px;
             .brandevents-left{
+                height: 580px;
                 span{
                     display: block;
                     overflow: hidden;
+                    height: 100%;
                     a{
                         display: block;
                         position: relative;
+                        height: 100%;
                         .brand-model-img{
                             display: block;
                             transform: scale(1);
                             transition: all 0.6s ease-in-out;
+                            object-fit: cover;
+                            height: 100%;
                         }
                         .brand-logo-img{
                             position: absolute;
-                            top: calc(50% - 23px);
+                            top: calc(50% - 17px);
                             left: calc(50% - 123px);
                         }
                     }
@@ -1045,7 +966,7 @@
                         display: block;
                         width: 410px;
                         height: 60px;
-                        background-color: #C6C1DD;
+                        background-color: #FCDCC1;
                         border-radius: 50px;
                         display: flex;
                         flex-direction: column;
@@ -1076,12 +997,24 @@
                 ul{
                     display: flex;
                     justify-content: center;
-                    gap: 30px;
+                    gap: 20px;
                     margin: 0;
                     padding: 0;
+                    height: 347px;
                     li{
                         width: 33.333%;
+                        height: 100%;
                         position: relative;
+                        a{
+                            display: block;
+                            height: 100%;
+                            img{
+                                width: 100%;
+                                display: block;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
                         &:hover .brandevents-action-button{
                             opacity: 100%;
                         }
@@ -1146,7 +1079,7 @@
                         width: 100%;
                     }
                 }
-                .text-box{
+                .text-box {
                     position: absolute;
                     bottom: 0;
                     left: 0;
@@ -1167,6 +1100,7 @@
                             font-size: 1.125rem;
                             color: #5f5f5f;
                             margin-top: 10px;
+                            width: 100%; 
                         }
                     }
                 }
@@ -1177,9 +1111,9 @@
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 0;
-            gap: 30px;
+            gap: 20px;
             li{
-                width: 785px;
+                width: calc(50% - 10px);
                 height: 150px;
                 background-color: #f5f5f5;
                 padding: 40px;
@@ -1246,11 +1180,11 @@
                 font-size: 1.25rem;
             }
             h2{
-                font-size: 2.5rem;
+                font-size: 2.45rem;
                 margin: 10px 0 40px;
                 letter-spacing: -1px;
             }
-            a{
+            .custom-origin-button{
                 display: inline-block;
                 color: #000;
                 background-color: #fff;
@@ -1261,10 +1195,10 @@
                 &::after{
                     content: "";
                     display: inline-block;
-                    width: 12px;
-                    height: 12px;
-                    border-top: solid 2px #000;
-                    border-right: solid 2px #000;
+                    width: 8px;
+                    height: 8px;
+                    border-top: solid 1px #000;
+                    border-right: solid 1px #000;
                     transform: rotate(45deg);
                     margin: 0 0 0.8px 10px;
                 }
@@ -1274,7 +1208,6 @@
             width: 77%;
             height: 480px;
             .custom-swiper-slide01{
-                width: 32% !important;
                 position: relative;
                 .custom-img1{
                     width: 100%;
@@ -1309,7 +1242,6 @@
                 }
             }
             .custom-swiper-slide02{
-                width: 32% !important;
                 .custom-img2{
                     width: 100%;
                     display: block;
@@ -1342,7 +1274,6 @@
                 }
             }
             .custom-swiper-slide03{
-                width: 32% !important;
                 .custom-img3{
                     width: 100%;
                     display: block;
@@ -1375,7 +1306,6 @@
                 }
             }
             .custom-swiper-slide04{
-                width: 32% !important;
                 .custom-img4{
                     width: 100%;
                     display: block;
@@ -1407,6 +1337,70 @@
                     }
                 }
             }
+            .custom-swiper-slide05{
+                .custom-img5{
+                    width: 100%;
+                    display: block;
+                    height: 480px;
+                    background: url(../images/custom-post-img2.jpg) no-repeat center / cover;
+                }
+                .custom-text5{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 30px;
+                    p{
+                        font-size: 1.25rem;
+                        color: #6D4D43;
+                    }
+                    h2{
+                        font-size: 1.875rem;
+                        margin-bottom: 1.25rem;
+                        color: #573E36;
+                    }
+                    a{
+                        padding: 4px 12px;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        color: #000;
+                        margin-left: 4px;
+                        border-radius: 8px;
+                    }
+                }
+            }
+            .custom-swiper-slide06{
+                .custom-img6{
+                    width: 100%;
+                    display: block;
+                    height: 480px;
+                    background: url(../images/custom-post-img2.jpg) no-repeat center / cover;
+                }
+                .custom-text6{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 30px;
+                    p{
+                        font-size: 1.25rem;
+                        color: #6D4D43;
+                    }
+                    h2{
+                        font-size: 1.875rem;
+                        margin-bottom: 1.25rem;
+                        color: #573E36;
+                    }
+                    a{
+                        padding: 4px 12px;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        color: #000;
+                        margin-left: 4px;
+                        border-radius: 8px;
+                    }
+                }
+            }
         }
     }
 }
@@ -1414,7 +1408,7 @@
 // 사용자 메뉴
 
 #user-menu{
-    padding: 100px 0;
+    padding: 100px 50px;
     ul{
         display: flex;
         justify-content: space-between;
@@ -3409,122 +3403,19 @@
     html, body{
         font-size: 16px;
     }
-    #new-product{
-        #new-product-swiper{
-            .swiper-wrapper{
-                .new-swiper-slide01 {
-                    .new-product-container{
-                        margin: -30px auto;
-                        ul{
-                            justify-content: center;
-                            gap: 30px;
-                            li{
-                                width: 17.1%;
-                            }
-                        }
-                    }
-                }
-                .new-swiper-slide02 {
-                    .new-product-container{
-                        margin: -30px auto;
-                        ul{
-                            justify-content: center;
-                            gap: 30px;
-                            li{
-                                width: 17.1%;
-                            }
-                        }
-                    }
-                }
-                .new-swiper-slide03 {
-                    .new-product-container{
-                        margin: -30px auto;
-                        ul{
-                            justify-content: center;
-                            gap: 30px;
-                            li{
-                                width: 17.1%;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+}
+
+
+@media (max-width: 1670px){
+    html, body{
+        font-size: 16px;
     }
-    #brandevents{
-        #brandevents-first-contents{
-            .brandevents-container{
-                .brandevents-left{
-                    span{
-                        a{
-                            .brand-model-img{
-                                width: 500px;
-                                height: 570px;
-                            }
-                            .brand-logo-img{
-                                width: 150px;
-                            }
-                        }
-                    }
-                }
-                .brandevents-right{
-                    height: 570px;
-                    ul{
-                        li{
-                            a{
-                                img{
-                                    width: 290px;
-                                    height: 330px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        #brandevents-second-contents{
-            .brandevents-container{
-                .brandevents-left{
-                    span{
-                        a{
-                            .brand-model-img{
-                                width: 500px;
-                                height: 570px;
-                            }
-                            .brand-logo-img{
-                                width: 150px;
-                            }
-                        }
-                    }
-                }
-                .brandevents-right{
-                    height: 570px;
-                    ul{
-                        li{
-                            a{
-                                img{
-                                    width: 290px;
-                                    height: 330px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    #popular-posts{
-        .posts-contents{
-            .text-posts{
-                li{
-                    width: 783px;
-                    height: 150px;
-                }
-            }
+    #user-menu ul li .menu-left a{
+        br{
+            display: block;
         }
     }
 }
-
 
 @media (max-width: 1650px){
     html, body{
@@ -3598,17 +3489,7 @@
         #brandevents-first-contents{
             .brandevents-container{
                 .brandevents-left{
-                    span{
-                        a{
-                            .brand-model-img{
-                                width: 450px;
-                                height: 520px;
-                            }
-                            .brand-logo-img{
-                                width: 100px;
-                            }
-                        }
-                    }
+                    height: 520px;
                 }
                 .brandevents-right{
                     height: 520px;
@@ -3618,14 +3499,7 @@
                         }
                     }
                     ul{
-                        li{
-                            a{
-                                img{
-                                    width: 290px;
-                                    height: 330px;
-                                }
-                            }
-                        }
+                        height: 320px;
                     }
                 }
             }
@@ -3633,17 +3507,7 @@
         #brandevents-second-contents{
             .brandevents-container{
                 .brandevents-left{
-                    span{
-                        a{
-                            .brand-model-img{
-                                width: 450px;
-                                height: 520px;
-                            }
-                            .brand-logo-img{
-                                width: 150px;
-                            }
-                        }
-                    }
+                    height: 520px;
                 }
                 .brandevents-right{
                     height: 520px;
@@ -3653,13 +3517,33 @@
                         }
                     }
                     ul{
-                        li{
-                            a{
-                                img{
-                                    width: 290px;
-                                    height: 330px;
-                                }
-                            }
+                        height: 320px;
+                    }
+                }
+            }
+        }
+    }
+    #footer{
+        .footer-container{
+            .footer-top{
+                margin-bottom: 22px;
+                .footer-menu{
+                    margin-bottom: 20px;
+                }
+                .footer-icon{
+                    li{
+                        margin-left: 18px;
+                        a{
+                            width: 26px;
+                        }
+                    }
+                }
+            }
+            .footer-bottom{
+                .footer-left{
+                    a{
+                        img{
+                            width: 100px;
                         }
                     }
                 }
@@ -3669,83 +3553,21 @@
 }
 
 @media (max-width: 1500px){
-    html, body{
-        font-size: 14px;
-    }
-    #brandevents{
-        #brandevents-first-contents{
-            .brandevents-container{
-                .brandevents-left{
-                    span{
-                        a{
-                            .brand-model-img{
-                                width: 420px;
-                                height: 490px;
-                            }
-                            .brand-logo-img{
-                                width: 100px;
-                            }
-                        }
-                    }
-                }
-                .brandevents-right{
-                    height: 490px;
-                    ul{
-                        li{
-                            a{
-                                img{
-                                    width: 270px;
-                                    height: 300px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        #brandevents-second-contents{
-            .brandevents-container{
-                .brandevents-left{
-                    span{
-                        a{
-                            .brand-model-img{
-                                width: 420px;
-                                height: 490px;
-                            }
-                            .brand-logo-img{
-                                width: 150px;
-                            }
-                        }
-                    }
-                }
-                .brandevents-right{
-                    height: 490px;
-                    ul{
-                        li{
-                            a{
-                                img{
-                                    width: 270px;
-                                    height: 300px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    #new-product .new-swiper-button-prev, #new-product .new-swiper-button-next{
+        top: 400px;
     }
 }
 
 @media (max-width: 1440px){
     html, body{
-        font-size: 12px;
+        font-size: 14px;
     }
     #mainbanner{
         #mainbanner-swiper{
-            height: 60vh;
+            // height: 60vh;
             .swiper-wrapper{
                 .swiper-slide01{
-                    height: 60vh;
+                    // height: 60vh;
                     .mainbanner-text01{
                         padding-left: 50px;
                         button{
@@ -3756,7 +3578,7 @@
                     }
                 }
                 .swiper-slide02{
-                    height: 60vh;
+                    // height: 60vh;
                     .mainbanner-text02{
                         padding-left: 50px;
                         button{
@@ -3767,7 +3589,7 @@
                     }
                 }
                 .swiper-slide03{
-                    height: 60vh;
+                    // height: 60vh;
                     .mainbanner-text03{
                         padding-left: 50px;
                         button{
@@ -3916,100 +3738,16 @@
         #new-product-swiper{
             height: 600px;
         }
+        .new-swiper-button-next {
+            display: none;
+        }
+        .new-swiper-button-prev {
+            display: none;
+        }
     } 
-    
-    #brandevents{
-        #brandevents-first-contents{
-            height: 600px;
-            .brandevents-container{
-                .brandevents-left{
-                    span{
-                        a{
-                            .brand-model-img{
-                                width: 390px;
-                                height: 460px;
-                            }
-                            .brand-logo-img{
-                                width: 100px;
-                            }
-                        }
-                    }
-                }
-                .brandevents-right{
-                    height: 460px;
-                    .brandevents-text{
-                        span{
-                            height: 54px;
-                        }
-                    }
-                    ul{
-                        li{
-                            a{
-                                img{
-                                    width: 260px;
-                                    height: 280px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        #brandevents-second-contents{
-            height: 600px;
-            .brandevents-container{
-                .brandevents-left{
-                    span{
-                        a{
-                            .brand-model-img{
-                                width: 390px;
-                                height: 460px;
-                            }
-                            .brand-logo-img{
-                                width: 150px;
-                            }
-                        }
-                    }
-                }
-                .brandevents-right{
-                    height: 460px;
-                    .brandevents-text{
-                        span{
-                            height: 54px;
-                        }
-                    }
-                    ul{
-                        li{
-                            a{
-                                img{
-                                    width: 260px;
-                                    height: 280px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
     #middlebanner{
         .mainbanner-box{
             height: 210px;
-        }
-    }
-    #popular-posts{
-        .posts-contents{
-            .photo-posts{
-                li{
-                    // height: 370px;
-                }
-            }
-            .text-posts{
-                li{
-                    width: 634px;
-                    height: 130px;
-                }
-            }
         }
     }
 
@@ -4046,22 +3784,7 @@
 
 @media (max-width: 1320px){
     html, body{
-        font-size: 12px;
-    }
-    #best-seller{
-        #best-seller-swiper{
-            .best-swiper-slide01{
-                .slide-left01{
-                    .best-left-text{
-                        h2{
-                            .disN{
-                                display: block;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        font-size: 14px;
     }
     #new-product{
         #new-product-swiper{
@@ -4074,6 +3797,13 @@
     html, body{
         font-size: 12px;
     }
+    #best-seller #best-seller-swiper .swiper-wrapper .best-swiper-slide01 .slide-total .slide-right01 .best-right-box-hover a {
+        padding: 14px 30px;
+        &::after{
+            width: 10px;
+            height: 10px;
+        }
+    }
     #new-product{
         #new-product-swiper{
             height: 500px;
@@ -4083,14 +3813,13 @@
         #brandevents-first-contents{
             .brandevents-container{
                 .brandevents-left{
+                    height: 420px;
                     span{
                         a{
-                            .brand-model-img{
-                                width: 350px;
-                                height: 420px;
-                            }
                             .brand-logo-img{
-                                width: 100px;
+                                width: 140px;
+                                top: calc(50% - 12px);
+                                left: calc(50% - 70px);
                             }
                         }
                     }
@@ -4103,14 +3832,7 @@
                         }
                     }
                     ul{
-                        li{
-                            a{
-                                img{
-                                    width: 220px;
-                                    height: 240px;
-                                }
-                            }
-                        }
+                        height: 260px;
                     }
                 }
             }
@@ -4118,14 +3840,13 @@
         #brandevents-second-contents{
             .brandevents-container{
                 .brandevents-left{
+                    height: 420px;
                     span{
                         a{
-                            .brand-model-img{
-                                width: 350px;
-                                height: 420px;
-                            }
                             .brand-logo-img{
-                                width: 150px;
+                                width: 180px;
+                                top: calc(50% - 12px);
+                                left: calc(50% - 90px);
                             }
                         }
                     }
@@ -4138,14 +3859,7 @@
                         }
                     }
                     ul{
-                        li{
-                            a{
-                                img{
-                                    width: 220px;
-                                    height: 240px;
-                                }
-                            }
-                        }
+                        height: 260px;
                     }
                 }
             }
@@ -4165,7 +3879,6 @@
             }
         }
     }
-
     #custom-beauty .custom-container .swiper-scrollbar.swiper-scrollbar-horizontal {
         bottom: 70px;
     }
@@ -4195,9 +3908,244 @@
                 }
             }
         }
-    }  
+    }
+    #user-menu{
+        .main-container{
+            ul{
+                li{
+                    justify-content: center;
+                    .user-menu-more-btn{
+                        display: none;
+                    }
+                    .menu-left{
+                        flex-direction: column;
+                        a{
+                            margin-right: 0;
+                        }
+                        .user-menu-name{
+                            margin: 16px 0 6px;
+                        }
+                        div{
+                        text-align: center;
+                        margin-right: 0;
+                        a{
+                            margin-right: 0;
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #identity{
+        > div{
+            .identity-text{
+                top: calc(50% - 100px);
+                height: 210px;
+                a {
+                    padding: 10px 32px;
+                }
+                p{
+                    margin: 10px 0 40px;
+                }
+            }
+        }
+    }
+    #footer{
+        .footer-container{
+            .footer-top{
+                margin-bottom: 18px;
+                .footer-menu{
+                    margin-bottom: 16px;
+                    li{
+                        margin-right: 34px;
+                    }
+                }
+                .footer-icon{
+                    li{
+                        margin-left: 14px;
+                        a{
+                            width: 22px;
+                        }
+                    }
+                }
+            }
+            .footer-bottom{
+                .footer-left{
+                    a{
+                        img{
+                            width: 90px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
 }
 
+
+@media (max-width: 1180px) {
+    html, body{
+        font-size: 12px;
+    }
+    #custom-beauty{
+        .main-container{
+            display: block;
+            .custom-title{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: end;
+                div{
+                    h2{
+                        margin: 10px 0 20px;
+                    }
+                }
+                .custom-origin-button{
+                    padding: 10px 24px;
+                    margin-bottom: 20px;
+                }
+            }
+            #custom-swiper{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    html, body{
+        font-size: 12px;
+    }
+    #brandevents{
+        #brandevents-first-contents{
+            .brandevents-container{
+                .brandevents-left{
+                    height: 380px;
+                    span{
+                        a{
+                            .brand-logo-img{
+                                width: 100px;
+                                top: calc(50% - 9px);
+                                left: calc(50% - 50px);
+                            }
+                        }
+                    }
+                }
+                .brandevents-right{
+                    height: 380px;
+                    .brandevents-text{
+                        span{
+                            height: 46px;
+                        }
+                    }
+                    ul{
+                        height: 260px;
+                    }
+                }
+            }
+        }
+        #brandevents-second-contents{
+            .brandevents-container{
+                .brandevents-left{
+                    height: 380px;
+                    span{
+                        a{
+                            .brand-logo-img{
+                                width: 130px;
+                                top: calc(50% - 9px);
+                                left: calc(50% - 65px);
+                            }
+                        }
+                    }
+                }
+                .brandevents-right{
+                    height: 380px;
+                    .brandevents-text{
+                        span{
+                            height: 46px;
+                        }
+                    }
+                    ul{
+                        height: 260px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 960px) {
+    html, body{
+        font-size: 12px;
+    }
+    #brandevents{
+        #brandevents-first-contents{
+            .brandevents-container{
+                gap: 30px;
+                .brandevents-left{
+                    height: 334px;
+                }
+                .brandevents-right{
+                    height: 330px;
+                    .brandevents-text{
+                        span{
+                            height: 34px;
+                            width: 260px;
+                            margin-bottom: 14px;
+                            p{
+                                font-size: 18px;
+                            }
+                        }
+                        h2{
+                            font-size: 34px;
+                        }
+                    }
+                    ul{
+                        height: 190px;
+                    }
+                }
+            }
+        }
+        #brandevents-second-contents{
+            .brandevents-container{
+                gap: 30px;
+                .brandevents-left{
+                    height: 334px;
+                    span{
+                        a{
+                            .brand-logo-img{
+                                width: 130px;
+                                top: calc(50% - 9px);
+                                left: calc(50% - 65px);
+                            }
+                        }
+                    }
+                }
+                .brandevents-right{
+                    height: 330px;
+                    .brandevents-text{
+                        span{
+                            height: 34px;
+                            width: 260px;
+                            margin-bottom: 14px;
+                            p{
+                                font-size: 18px;
+                            }
+                        }
+                        h2{
+                            font-size: 34px;
+                        }
+                    }
+                    ul{
+                        height: 190px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 990px) {
     html, body{
@@ -4207,14 +4155,6 @@
         .header-container{
             span{
                 width: 10%;
-            }
-            h1{
-                width: 90%;
-                a{
-                    img{
-                        margin: 0 auto;
-                    }
-                }
             }
         }
     }
@@ -4236,22 +4176,103 @@
             }
         }
     }
-    #user-menu{
-        .main-container{
-            ul{
-                li{
-                    .user-menu-more-btn{
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
+    // #user-menu{
+    //     .main-container{
+    //         ul{
+    //             li{
+    //                 justify-content: center;
+    //                 .user-menu-more-btn{
+    //                     display: none;
+    //                 }
+    //                 .menu-left{
+    //                     flex-direction: column;
+    //                     a{
+    //                         margin-right: 0;
+    //                     }
+    //                     .user-menu-name{
+    //                         margin: 16px 0 6px;
+    //                     }
+    //                     div{
+    //                     text-align: center;
+    //                     margin-right: 0;
+    //                     a{
+    //                         margin-right: 0;
+    //                     }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 @media (max-width: 768px){
     html, body{
         font-size: 10px;
+    }
+    #best-seller #best-seller-swiper .swiper-pagination-horizontal {
+        left: 25%;
+    }
+    #best-seller{
+        #best-seller-swiper{
+            height: 1000px;
+            max-height: none;
+            .swiper-wrapper{
+                .best-swiper-slide01{
+                    .slide-total{
+                        flex-direction: column;
+                        height: auto;
+                        .slide-left01{
+                            width: 100%;
+                            height: 500px;
+                            max-height: none;
+                            .best-left-text{
+                                span{
+                                    display: none;
+                                }
+                            } 
+                        }
+                        .slide-right01{
+                            width: 100%;
+                            height: 500px;
+                            max-height: none;
+                        }
+                    }
+                }
+                .best-swiper-slide02{
+                    .slide-total{
+                        flex-direction: column;
+                        height: auto;
+                        .slide-left02{
+                            width: 100%;
+                            height: 500px;
+                            max-height: none;
+                        }
+                        .slide-right02{
+                            width: 100%;
+                            height: 500px;
+                            max-height: none;
+                        }
+                    }
+                }
+                .best-swiper-slide03{
+                    .slide-total{
+                        flex-direction: column;
+                        height: auto;
+                        .slide-left03{
+                            width: 100%;
+                            height: 500px;
+                            max-height: none;
+                        }
+                        .slide-right03{
+                            width: 100%;
+                            height: 500px;
+                            max-height: none;
+                        }
+                    }
+                }
+            }
+        }
     }
     #new-product{
         #new-product-swiper{
@@ -4298,275 +4319,271 @@
     } 
     #brandevents{
         #brandevents-first-contents{
-            height: 400px;
             .brandevents-container{
+                display: block !important;
                 gap: 30px;
                 .brandevents-left{
+                    height: 370px;
                     span{
                         a{
                             .brand-model-img{
-                                width: 380px;
-                                height: 280px;
+                                height: 400px;
+                                width: 100%;
+                                object-position: 0 80%;
                             }
                             .brand-logo-img{
-                                width: 100px;
+                                width: 140px;
+                                top: calc(50% - 9px);
+                                left: calc(50% - 70px);
                             }
                         }
                     }
                 }
                 .brandevents-right{
-                    height: 280px;
+                    height: 330px;
+                    margin-top: 36px;
                     .brandevents-text{
                         span{
-                            height: 32px;
-                            width: 220px;
-                            margin-bottom: 20px;
+                            height: 34px;
+                            width: 260px;
+                            margin-bottom: 14px;
+                            p{
+                                font-size: 18px;
+                            }
+                        }
+                        h2{
+                            font-size: 34px;
                         }
                     }
                     ul{
-                        gap: 20px;
-                        li{
-                            a{
-                                img{
-                                    width: 220px;
-                                    height: 136px;
-                                }
+                        height: 224px;
+                    }
+                }
+            }
+        }
+        #brandevents-second-contents{
+            .brandevents-container{
+                display: block !important;
+                gap: 30px;
+                .brandevents-left{
+                    height: 370px;
+                    span{
+                        a{
+                            .brand-model-img{
+                                height: 390px;
+                                width: 100%;
+                                object-position: 0 70%;
                             }
+                            .brand-logo-img{
+                                width: 180px;
+                                top: calc(50% - 16px);
+                                left: calc(50% - 90px);
+                            }
+                        }
+                    }
+                }
+                .brandevents-right{
+                    height: 330px;
+                    margin-top: 36px;
+                    .brandevents-text{
+                        span{
+                            height: 34px;
+                            width: 260px;
+                            margin-bottom: 14px;
+                            p{
+                                font-size: 18px;
+                            }
+                        }
+                        h2{
+                            font-size: 34px;
+                        }
+                    }
+                    ul{
+                        height: 224px;
+                    }
+                }
+            }
+        }
+    }
+
+    #middlebanner{
+        .mainbanner-box{
+            height: 140px;
+        }
+    }
+    #identity{
+        > div{
+            .identity-text{
+                top: calc(50% - 71px);
+                height: 142px;
+                p{
+                    margin: 10px 0 24px;
+                }
+                a{
+                    padding: 6px 25px;
+                    &::after{
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+            }
+        }
+    }
+    #popular-posts{
+        .posts-contents{
+            .text-posts {
+                display: block;
+                li{
+                    width: 100%;
+                    height: 120px;
+                    margin-bottom: 14px;
+                }
+                .disB{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 650px){
+    #brandevents{
+        #brandevents-first-contents{
+            .brandevents-container{
+                .brandevents-right{
+                    ul{
+                        li{
+                            width: 50%;
+                        }
+                        .disB{
+                            display: none;
                         }
                     }
                 }
             }
         }
         #brandevents-second-contents{
-            height: 400px;
             .brandevents-container{
-                gap: 30px;
-                .brandevents-left{
-                    span{
-                        a{
-                            .brand-model-img{
-                                width: 380px;
-                                height: 280px;
-                            }
-                            .brand-logo-img{
-                                width: 100px;
-                            }
-                        }
-                    }
-                }
                 .brandevents-right{
-                    height: 280px;
-                    .brandevents-text{
-                        span{
-                            height: 32px;
-                            width: 220px;
-                            margin-bottom: 20px;
+                    ul{
+                        li{
+                            width: 50%;
+                        }
+                        .disB{
+                            display: none;
                         }
                     }
-                    ul{
-                        gap: 20px;
-                        li{
-                            a{
-                                img{
-                                    width: 220px;
-                                    height: 136px;
-                                }
+                }
+            }
+        }
+    }
+    #user-menu{
+        .main-container{
+            ul{
+                display: block;
+                li{
+                    width: 100%;
+                    justify-content: space-between;
+                    margin-bottom: 14px;
+                    .menu-left{
+                        flex-direction: row;
+                        div{
+                            text-align: left;
+                            margin-left: 20px;
+                            a .disN{
+                                display: none;
                             }
                         }
+                        .user-menu-name{
+                            margin: 0 0 6px;
+                        }
                     }
                 }
             }
         }
     }
-    #middlebanner{
-        .mainbanner-box{
-            height: 140px;
-        }
-    }
-    #custom-beauty{
-        .main-container{
-            display: block;
-            .custom-title{
-                display: flex;
-                width: 100%;
-                > div{
-                    width: 80%;
-                }
-                a{
-                    width: 20%;
-                }
-            }
-            #custom-swiper{
-                width: 100%;
-                .swiper-wrapper{
-                }
-            }
-        }
-    }
-    // #popular-posts{
-    //     .posts-contents{
-    //         .main-container{
-    //             .photo-posts{
-    //                 flex-wrap: wrap;
-    //                 li{
-    //                     width: 49%;
-    //                     margin-bottom: 10px;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
 }
 
 @media (max-width: 580px){
-        #brandevents{
-            #brandevents-first-contents{
-                height: 900px;
-                .brandevents-container{
-                    display: block !important;
-                    .brandevents-left{
-                        span{
-                            a{
-                                .brand-model-img{
-                                    width: 480px;
-                                    height: 530px;
-                                }
-                                .brand-logo-img{
-                                    width: 150px;
-                                }
-                            }
-                        }
-                    }
-                    .brandevents-right{
-                        .brandevents-text{
-                            span{
-                                margin-top: 20px;
-                            }
-                        }
-                        ul{
-                            li{
-                                a{
-                                    img{
-                                        height: 170px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            #brandevents-second-contents{
-                height: 980px;
-                .brandevents-container{
-                    display: block !important;
-                    .brandevents-left{
-                        span{
-                            a{
-                                .brand-model-img{
-                                    width: 480px;
-                                    height: 530px;
-                                }
-                                .brand-logo-img{
-                                    width: 150px;
-                                }
-                            }
-                        }
-                    }
-                    .brandevents-right{
-                        .brandevents-text{
-                            span{
-                                margin-top: 20px;
-                            }
-                        }
-                        ul{
-                            li{
-                                a{
-                                    img{
-                                        height: 170px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
         #best-seller #best-seller-swiper .swiper-pagination-horizontal {
             bottom: 40px;
             left: 25%;
         }
-        #best-seller{
-            #best-seller-swiper{
-                height: 1000px;
-                max-height: none;
-                .swiper-wrapper{
-                    .best-swiper-slide01{
-                        .slide-total{
-                            flex-direction: column;
-                            height: auto;
-                            .slide-left01{
-                                width: 100%;
-                                height: 500px;
-                                max-height: none;
-                                .best-left-text{
-                                    span{
-                                        display: none;
-                                    }
-                                } 
-                            }
-                            .slide-right01{
-                                width: 100%;
-                                height: 500px;
-                                max-height: none;
-                            }
-                        }
-                    }
-                    .best-swiper-slide02{
-                        .slide-total{
-                            flex-direction: column;
-                            height: auto;
-                            .slide-left02{
-                                width: 100%;
-                                height: 500px;
-                                max-height: none;
-                            }
-                            .slide-right02{
-                                width: 100%;
-                                height: 500px;
-                                max-height: none;
-                            }
-                        }
-                    }
-                    .best-swiper-slide03{
-                        .slide-total{
-                            flex-direction: column;
-                            height: auto;
-                            .slide-left03{
-                                width: 100%;
-                                height: 500px;
-                                max-height: none;
-                            }
-                            .slide-right03{
-                                width: 100%;
-                                height: 500px;
-                                max-height: none;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        // #best-seller{
+        //     #best-seller-swiper{
+        //         height: 1000px;
+        //         max-height: none;
+        //         .swiper-wrapper{
+        //             .best-swiper-slide01{
+        //                 .slide-total{
+        //                     flex-direction: column;
+        //                     height: auto;
+        //                     .slide-left01{
+        //                         width: 100%;
+        //                         height: 500px;
+        //                         max-height: none;
+        //                         .best-left-text{
+        //                             span{
+        //                                 display: none;
+        //                             }
+        //                         } 
+        //                     }
+        //                     .slide-right01{
+        //                         width: 100%;
+        //                         height: 500px;
+        //                         max-height: none;
+        //                     }
+        //                 }
+        //             }
+        //             .best-swiper-slide02{
+        //                 .slide-total{
+        //                     flex-direction: column;
+        //                     height: auto;
+        //                     .slide-left02{
+        //                         width: 100%;
+        //                         height: 500px;
+        //                         max-height: none;
+        //                     }
+        //                     .slide-right02{
+        //                         width: 100%;
+        //                         height: 500px;
+        //                         max-height: none;
+        //                     }
+        //                 }
+        //             }
+        //             .best-swiper-slide03{
+        //                 .slide-total{
+        //                     flex-direction: column;
+        //                     height: auto;
+        //                     .slide-left03{
+        //                         width: 100%;
+        //                         height: 500px;
+        //                         max-height: none;
+        //                     }
+        //                     .slide-right03{
+        //                         width: 100%;
+        //                         height: 500px;
+        //                         max-height: none;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
 
-@media (max-width: 320px){
-    h1{
-        a{
-            img{
-                width: 50% !important;
-                margin: 0 auto;
-            }
-        }
-    }
+
+@media (max-width: 375px){
+    
 }
+// @media (max-width: 320px){
+//     h1{
+//         a{
+//             img{
+//                 width: 50% !important;
+//                 margin: 0 auto;
+//             }
+//         }
+//     }
+// }
 

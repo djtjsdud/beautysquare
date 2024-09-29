@@ -63,5 +63,39 @@ $(function() {
     });
 });
 
-// 
+// 탑버튼
 
+window.addEventListener('scroll', function() {
+    const fixBtn = document.getElementById('fixBtn');
+    if (window.scrollY > 100) { // 스크롤이 100px 이상일 때
+        fixBtn.style.display = 'block'; // 버튼 보이기
+    } else {
+        fixBtn.style.display = 'none'; // 버튼 숨기기
+    }
+});
+
+// 로그인페이지
+
+// Easy way to wait for all videos to load before start playing
+
+var promises = [];
+function makePromise(i, video) {
+  promises[i] = new $.Deferred();
+  // This event tells us video can be played all the way through, without stopping or buffering
+  video.oncanplaythrough = function() {
+    // Resolve the promise
+    promises[i].resolve();
+  }
+}
+// Pause all videos and create the promise array
+$('video').each(function(index){
+  this.pause();
+  makePromise(index, this);
+})
+
+// Wait for all promises to resolve then start playing
+$.when.apply(null, promises).done(function () {
+  $('video').each(function(){
+    this.play();
+  });
+});

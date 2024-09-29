@@ -39,16 +39,15 @@ body, html{
     align-items: center;
 }
 .button-black{
-    width: 300px;
-    height: 60px;
     background-color: transparent;
     color: #000;
     border: solid 1px #000;
-    font-size: 1.125rem;
+    font-size: 1.1rem;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
-    margin-top: 50px;
+    margin-top: 34px;
     cursor: pointer;
+    padding: 12px 32px;
 }
 .button-black::after{
     content: "";
@@ -75,17 +74,17 @@ body, html{
 }
 .slide-total{
     display: flex;
-    height: calc(100vh - 120px);
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 .slide-left{
     width: 50%;
-    height: calc(100vh - 120px);
+    height: 100%;
 }
 .slide-right{
     width: 50%;
-    height: calc(100vh - 120px);
+    height: 100%;
     background-color: #fff;
     position: relative;
 }

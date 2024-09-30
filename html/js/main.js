@@ -60,6 +60,7 @@ $(function() {
 
     $('.nav-Btn').on('click', function(){
         $(this).toggleClass('slideOn');
+        $('nav').toggleClass('slideOn');
     });
 });
 

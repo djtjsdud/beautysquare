@@ -42,9 +42,9 @@ var best_swiper = new Swiper("#best-seller-swiper", {
 });
 
 //신제품
-var new_swiper = new Swiper("#new-product-swiper", {
-    slidesPerView: 5,
-    slidesPerGroup: 3,
+var swiper_new = new Swiper("#new-product-swiper", {
+    slidesPerView: 4,
+    slidesPerGroup: 4,
     spaceBetween: 30,
     loop: true,
     pagination: {
@@ -56,7 +56,7 @@ var new_swiper = new Swiper("#new-product-swiper", {
         prevEl: "#new-product-swiper .new-swiper-button-prev",
     },
     breakpoints: {
-        100: {
+        320: {
             slidesPerGroup: 1,
             slidesPerView: 1,
             spaceBetween: 10,
@@ -80,7 +80,7 @@ var new_swiper = new Swiper("#new-product-swiper", {
 });
 
 // ////////////////////////////////////////맞춤형 추천
-var swiper = new Swiper("#custom-swiper", {
+var swiper_custom = new Swiper("#custom-swiper", {
     slidesPerView: 1,
     slidesPerGroup : 1,
     spaceBetween: 20,
@@ -101,7 +101,48 @@ var swiper = new Swiper("#custom-swiper", {
         992: {
             slidesPerView: 3, // 992 이상에서 3개
         },
+
     },
+});
+
+
+
+//베스트(서브 페이지)
+var swiper_best = new Swiper("#sub-best-swiper .swiper.mySwiper", {
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: ".sub-best-swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".sub-best-swiper-button-next",
+        prevEl: ".sub-best-swiper-button-prev",
+    },
+    breakpoints: {
+        320: {
+            slidesPerGroup: 1,
+            slidesPerView: 1,
+            spaceBetween: 10
+        },
+        375: {
+            slidesPerGroup: 2,
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        580: {
+            slidesPerGroup: 3,
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        990: {
+            slidesPerGroup: 4,
+            slidesPerView: 4,
+            spaceBetween: 30
+        },
+    }
 });
 
 // ///////////////////////////////////브랜드 소개
@@ -131,20 +172,4 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // 관찰할 요소 추가
     observer.observe(img);
-});
-
-// 베스트(서브페이지)
-
-var new_swiper = new Swiper("#sub-best-swiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-        el: "#sub-best-swiper .sub-best-swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: "#sub-best-swiper .sub-best-swiper-button-next",
-        prevEl: "#sub-best-swiper .sub-best-swiper-button-prev",
-    },
 });

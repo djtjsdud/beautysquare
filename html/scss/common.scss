@@ -8,8 +8,8 @@ body, html{
     -webkit-box-orient: vertical; /* 수직 방향으로 정렬 */
     -webkit-line-clamp: 2; /* 최대 2줄로 제한 */
     overflow: hidden; /* 넘치는 내용 숨김 */
+    height: 3.2rem; /* 두 줄에 맞는 높이 (폰트 크기에 따라 조정) */
     text-overflow: ellipsis; /* 말줄임 표시 */
-    height: 3rem; /* 두 줄에 맞는 높이 (폰트 크기에 따라 조정) */
 }
 .ellipsis2 {
     display: block; /* 블록 요소로 설정 */

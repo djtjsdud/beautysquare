@@ -56,7 +56,7 @@ var swiper_new = new Swiper("#new-product-swiper", {
         prevEl: "#new-product-swiper .new-swiper-button-prev",
     },
     breakpoints: {
-        320: {
+        100: {
             slidesPerGroup: 1,
             slidesPerView: 1,
             spaceBetween: 10,
@@ -95,7 +95,7 @@ var swiper_custom = new Swiper("#custom-swiper", {
         hide: false,
     },
     breakpoints: {
-        576: {
+        580: {
             slidesPerView: 2, // 576 이상에서 2개
         },
         992: {

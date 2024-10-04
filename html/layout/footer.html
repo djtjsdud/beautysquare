@@ -1,14 +1,22 @@
 <!-- 푸터 영역 -->
 
-<footer id="footer">
+<footer id="footer" class="d-none d-md-block">
     <div class="footer-container">
         <div class="footer-top">
             <ul class="footer-menu">
-                <li><a href="#">서비스이용약관</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">이용안내</a></li>
-                <li><a href="#">제휴문의</a></li>
-                <li><a href="#">고객센터</a></li>
+                <li class="footer-menu-top">
+                    <ul>
+                        <li><a href="#">서비스이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </li>
+                <li class="footer-menu-bottom">
+                    <ul>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </li>
             </ul>
             <ul class="footer-icon">
                 <li><a href="#"><img src="/images/naver-icon.svg" alt="네이버 아이콘 이미지"></a></li>
@@ -38,6 +46,48 @@
         </div>
     </div>
 </footer>
+
+
+<!-- 모바일 푸터 -->
+
+<section id="m-footer" class="d-block d-md-none">
+    <div class="m-footerBox d-flex flex-column align-items-center">
+        <div class="info01 d-flex flex-column align-items-center">
+            <h3>
+                <a href="/"><img src="/images/footer-logo-img.jpg" alt="유니버스 엔터테인먼트 하단 로고 입니다"></a>
+            </h3>
+            <ul class="footerLink d-flex justify-content-center align-items-center">
+                <li><a href="#none">서비스이용약관</a></li>
+                <li><a href="#none">개인정보처리방침</a></li>
+                <li><a href="#none">이용안내</a></li>
+                <li><a href="#none">제휴문의</a></li>
+                <li><a href="#none">고객센터</a></li>
+            </ul>
+        </div>
+        <ul class="info02 d-flex flex-column text-center flex-wrap">
+            <li>
+                <ul class="text01 d-flex justify-content-center flex-wrap">
+                    <li class="t01"><b>주식회사</b> 뷰티스퀘어</li>
+                    <li><b>대표이사</b> 어선영</li>
+                </ul>
+            </li>
+            <li>
+                <ul class="text02 d-flex justify-content-center flex-wrap">
+                    <li><b>주소</b> 경기도 대한시 민국구 만세대로 123 801호</li>
+                    <li>대표번호 : 000-000-0000</li>
+                </ul>
+            </li>
+            <li><b>사업자등록번호</b> 123-45-67890</li>
+            <li><b>호스팅 서비스 사업자</b> 닷홈</li>
+            <li>COPYRIGHT ⓒ 2024 Beautysquare. ALL RIGHTS RESERVED.</li>
+        </ul>
+        <ul class="footerSns d-flex gap-2">
+            <li><a href="#none"><img src="/images/naver-icon.svg" alt="네이버"></a></li>
+            <li><a href="#none"><img src="/images/kakao-icon.svg" alt="카카오"></a></li>
+            <li><a href="#none"><img src="/images/instagram-icon.svg" alt="인스타그램"></a></li>
+        </ul>
+    </div>
+</section>
 
 <div id="fixBtn" style="display: none;">
     <div class="topBtn">

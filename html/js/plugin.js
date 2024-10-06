@@ -27,6 +27,8 @@ var best_swiper = new Swiper("#best-seller-swiper", {
     spaceBetween: 30,
     centeredSlides: true,
     loop : true,
+    slidesPerView: 1, // 한 번에 보이는 슬라이드 수
+    slidesPerGroup: 1, // 한 번에 넘기는 슬라이드 수
     // autoplay: {
     //     delay: 2500,
     //     disableOnInteraction: false,
@@ -52,31 +54,60 @@ var swiper_new = new Swiper("#new-product-swiper", {
         clickable: true,
     },
     navigation: {
-        nextEl: "#new-product-swiper .new-swiper-button-next",
-        prevEl: "#new-product-swiper .new-swiper-button-prev",
+        nextEl: "#new-product .new-swiper-button-next",
+        prevEl: "#new-product .new-swiper-button-prev",
     },
+    // breakpoints: {
+    //     100: {
+    //         slidesPerGroup: 1,
+    //         slidesPerView: 1,
+    //         spaceBetween: 10,
+    //     },
+    //     400: {
+    //         slidesPerGroup: 2,
+    //         slidesPerView: 2,
+    //         spaceBetween: 20,
+    //     },
+    //     580: {
+    //         slidesPerGroup: 3,
+    //         slidesPerView: 3,
+    //         spaceBetween: 30,
+    //     },
+    //     990: {
+    //         slidesPerGroup: 5,
+    //         slidesPerView: 5,
+    //         spaceBetween: 30,
+    //     },
+    // },
+
     breakpoints: {
-        100: {
+        320: {
             slidesPerGroup: 1,
             slidesPerView: 1,
             spaceBetween: 10,
         },
-        375: {
+        480: {
             slidesPerGroup: 2,
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        580: {
+        768: {
             slidesPerGroup: 3,
             slidesPerView: 3,
             spaceBetween: 30,
         },
-        990: {
+        1024: {
+            slidesPerGroup: 4,
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        1280: {
             slidesPerGroup: 5,
             slidesPerView: 5,
             spaceBetween: 30,
         },
     },
+    
 });
 
 // ////////////////////////////////////////맞춤형 추천

@@ -278,3 +278,9 @@ body, html{
 .disB{
     display: block;
 }
+
+// 애니메이션 속도
+
+.animate__fadeInUp{
+    --animate-duration: 1.5s;
+}

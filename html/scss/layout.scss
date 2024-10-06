@@ -302,7 +302,7 @@
 // 모바일 푸터
 
 #m-footer{
-    padding-top: 50px;
+    padding: 100px 0;
     .m-footerBox{
         gap: 30px;
         .info01{
@@ -321,7 +321,7 @@
             .footerLink{
                 gap: 14px;
                 li{
-                    &:nth-child(5) a::after{
+                    &:nth-child(3) a::after{
                         display: none;
                     }
                     a{

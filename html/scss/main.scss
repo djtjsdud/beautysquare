@@ -26,9 +26,7 @@
     // ///////////메인 콘텐츠(메인 배너)///////////
 
     #mainbanner{
-        height: calc(100vh - 70px);
-        max-height: 800px;
-        min-height: 658px;
+        height: 740px;
         #mainbanner-swiper .swiper-button-next{
             color: #fff;
             bottom: 50px;
@@ -85,7 +83,7 @@
                             font-size: 3.2rem;
                         }
                         .second-text{
-                            padding: 20px 0 0;
+                            padding: 32px 0 44px;
                             font-size: 1.5rem;
                             line-height: 1.2;
                         }
@@ -97,26 +95,10 @@
                             font-size: 1.1rem;
                             border-radius: 50px;
                             transition: all 0.3s ease-in-out;
-                            margin-top: 34px;
                             padding: 12px 32px;
-                            &::after{
-                                content: "";
-                                display: inline-block;
-                                width: 12px;
-                                height: 12px;
-                                border-top: solid 2px #fff;
-                                border-right: solid 2px #fff;
-                                transform: rotate(45deg);
-                                margin: 0 0 0.8px 10px;
-                                transition: all 0.3s ease-in-out;
-                            }
                             &:hover{
                                 background-color: #fff;
                                 color: #000;
-                            }
-                            &:hover::after{
-                                border-top: solid 1px #000;
-                                border-right: solid 1px #000;
                             }
                         }
                     }
@@ -128,7 +110,7 @@
                     url(../images/mainbanner2.png) no-repeat center / cover;
                     .mainbanner-text02{
                         position: absolute;
-                        top: 34%;
+                        top: 30%;
                         left: 0;
                         padding-left: 50px;
                         // 위치 및 스타일 추가
@@ -136,7 +118,7 @@
                             font-size: 3.2rem;
                         }
                         .second-text{
-                            padding: 10px 0;
+                            padding: 32px 0 44px;
                             font-size: 1.5rem;
                             line-height: 1.2;
                         }
@@ -149,14 +131,14 @@
                     background: url(../images/mainbanner3.jpg) no-repeat center / cover;
                     .mainbanner-text03{
                         position: absolute;
-                        top: 34%;
+                        top: 30%;
                         left: 0;
                         padding-left: 50px;
                         h2{
                             font-size: 3.2rem;
                         }
                         .second-text{
-                            padding: 10px 0;
+                            padding: 32px 0 44px;
                             font-size: 1.5rem;
                             line-height: 1.2;
                         }
@@ -230,8 +212,7 @@
     }
     #best-seller-swiper{
         width: 100%;
-        height: calc(100vh - 120px);
-        min-height: 700px;
+        height: 700px;
         .best-swiper-slide01{
             width: 100%;
             .slide-left01{
@@ -533,7 +514,7 @@
             .slide-left04{
                 position: relative;
                 .slide-left-img{
-                    background: url(../images/best-big-img03.jpg) no-repeat center / cover;
+                    background: url(../images/best-big-img04.jpg) no-repeat center / cover;
                     width: 100%;
                     height: 100%;
                     display: block;
@@ -796,6 +777,12 @@
                 }
             }
         }
+    }
+    #new-product-swiper.new-swiper-768{
+        display: none;
+    }
+    #new-product-swiper.new-swiper-480{
+        display: none;
     }
 }
 
@@ -1291,12 +1278,12 @@
                     padding: 30px;
                     // pointer-events: none;
                     p{
-                        font-size: 1.25rem;
+                        font-size: 1.125rem;
                         color: #3F462D;
                     }
                     h2{
-                        font-size: 1.875rem;
-                        margin-bottom: 1.25rem;
+                        font-size: 1.75rem;
+                        margin-bottom: 20px;
                         color: #3F462D;
                     }
                     a{
@@ -1323,12 +1310,12 @@
                     height: 100%;
                     padding: 30px;
                     p{
-                        font-size: 1.25rem;
+                        font-size: 1.125rem;
                         color: #684D31;
                     }
                     h2{
-                        font-size: 1.875rem;
-                        margin-bottom: 1.25rem;
+                        font-size: 1.75rem;
+                        margin-bottom: 20px;
                         color: #523B24;
                     }
                     a{
@@ -1355,12 +1342,12 @@
                     height: 100%;
                     padding: 30px;
                     p{
-                        font-size: 1.25rem;
+                        font-size: 1.125rem;
                         color: #30351B;
                     }
                     h2{
-                        font-size: 1.875rem;
-                        margin-bottom: 1.25rem;
+                        font-size: 1.75rem;
+                        margin-bottom: 20px;
                         color: #3F462D;
                     }
                     a{
@@ -1387,12 +1374,12 @@
                     height: 100%;
                     padding: 30px;
                     p{
-                        font-size: 1.25rem;
+                        font-size: 1.125rem;
                         color: #6D4D43;
                     }
                     h2{
-                        font-size: 1.875rem;
-                        margin-bottom: 1.25rem;
+                        font-size: 1.75rem;
+                        margin-bottom: 20px;
                         color: #573E36;
                     }
                     a{
@@ -1409,7 +1396,7 @@
                     width: 100%;
                     display: block;
                     height: 480px;
-                    background: url(../images/custom-post-img2.jpg) no-repeat center / cover;
+                    background: url(../images/custom-post-img5.jpg) no-repeat center / cover;
                 }
                 .custom-text5{
                     position: absolute;
@@ -1419,12 +1406,12 @@
                     height: 100%;
                     padding: 30px;
                     p{
-                        font-size: 1.25rem;
+                        font-size: 1.125rem;
                         color: #6D4D43;
                     }
                     h2{
-                        font-size: 1.875rem;
-                        margin-bottom: 1.25rem;
+                        font-size: 1.75rem;
+                        margin-bottom: 20px;
                         color: #573E36;
                     }
                     a{
@@ -1441,7 +1428,7 @@
                     width: 100%;
                     display: block;
                     height: 480px;
-                    background: url(../images/custom-post-img2.jpg) no-repeat center / cover;
+                    background: url(../images/custom-post-img6.jpg) no-repeat center / cover;
                 }
                 .custom-text6{
                     position: absolute;
@@ -1451,12 +1438,12 @@
                     height: 100%;
                     padding: 30px;
                     p{
-                        font-size: 1.25rem;
+                        font-size: 1.125rem;
                         color: #6D4D43;
                     }
                     h2{
-                        font-size: 1.875rem;
-                        margin-bottom: 1.25rem;
+                        font-size: 1.75rem;
+                        margin-bottom: 20px;
                         color: #573E36;
                     }
                     a{
@@ -3308,7 +3295,7 @@ body {
         background: #fff;
         padding: 30px 0;
   
-        h1 {
+        legend {
           text-align: center;
           margin: 30px 0;
           font-size: 30px;
@@ -3804,17 +3791,11 @@ body {
         font-size: 14px;
     }
     #mainbanner {
-    min-height: auto;
-    // height: calc(100vh - 170px);
-    height: 100vh;
-    min-height: 570px;
-    max-height: 570px;
+    height: 570px;
     }
     #best-seller{
         #best-seller-swiper{
-            height: calc(100vh - 160px);
-            min-height: 600px;
-            max-height: 600px;
+            height: 600px;
             .swiper-pagination-horizontal{
                 bottom: 46px;
             }
@@ -3822,14 +3803,10 @@ body {
                 .best-swiper-slide01{
                     .slide-total{
                         .slide-left01{
-                            height: 100vh;
-                            max-height: 600px;
-                            min-height: 600px;
+                            height: 600px;
                         }
                         .slide-right01{
-                            height: 100vh;
-                            max-height: 600px;
-                            min-height: 600px;
+                            height: 600px;
                             .best-right-box{
                                 img{
                                     width: 130px;
@@ -3856,14 +3833,10 @@ body {
                 .best-swiper-slide02{
                     .slide-total{
                         .slide-left02{
-                            height: 100vh;
-                            max-height: 600px;
-                            min-height: 600px;
+                            height: 600px;
                         }
                         .slide-right02{
-                            height: 100vh;
-                            max-height: 600px;
-                            min-height: 600px;
+                            height: 600px;
                             .best-right-box{
                                 margin: 0 auto 74px;
                                 img{
@@ -3884,14 +3857,10 @@ body {
                 .best-swiper-slide03{
                     .slide-total{
                         .slide-left03{
-                            height: 100vh;
-                            max-height: 600px;
-                            min-height: 600px;
+                            height: 600px;
                         }
                         .slide-right03{
-                            height: 100vh;
-                            max-height: 600px;
-                            min-height: 600px;
+                            height: 600px;
                             .best-right-box{
                                 margin: 0 auto 74px;
                                 img{
@@ -4028,16 +3997,19 @@ body {
     #mainbanner .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
         right: 140px;
     }
-    #best-seller #best-seller-swiper .swiper-wrapper .best-swiper-slide01 .slide-total .slide-right01 .best-right-box-hover a {
-        padding: 14px 30px;
-        &::after{
+
+    #best-seller{
+        .best-seller-title .flex-container a::after {
             width: 10px;
             height: 10px;
         }
-    }
-    #best-seller .best-seller-title .flex-container a::after {
-        width: 10px;
-        height: 10px;
+        #best-seller-swiper .swiper-wrapper .best-swiper-slide01 .slide-total .slide-right01 .best-right-box-hover a {
+            padding: 14px 30px;
+            &::after{
+                width: 10px;
+                height: 10px;
+            }
+        }
     }
     
     #new-product{
@@ -4046,14 +4018,6 @@ body {
             margin-top: 16px;
             .new-swiper-pagination {
                 bottom: 30px;
-            }
-        }
-        .new-title{
-            .flex-container{
-                a::after{
-                    width: 10px;
-                    height: 10px;
-                }
             }
         }
     }
@@ -4448,15 +4412,21 @@ body {
             }
         }
     }
-    #mainbanner #mainbanner-swiper .swiper-button-next {
-        display: none;
+    #mainbanner #mainbanner-swiper{
+        .swiper-button-next {
+            display: none;
+        }
+        .swiper-scrollbar {
+            bottom: var(--swiper-scrollbar-bottom, 86px);
+
+        }
     }
     #mainbanner #mainbanner-swiper .swiper-button-prev {
         display: none;
     }
     #mainbanner .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
         right: 50px;
-        bottom: 56px;
+        bottom: 40px;
         .swiper-pagination-current{
             font-size: 22px;
         }
@@ -4488,6 +4458,10 @@ body {
                 }
             }
         }
+    }
+    #popular-posts .posts-contents .posts-more-btn {
+        padding: 50px 0 50px;
+        margin: 0;
     }
     #event .event-tabs .container .sub-container .event-ing ul li {
         width: calc(50% - 10px);
@@ -4684,14 +4658,13 @@ body {
         right: 140px;
     }
     #mainbanner{
-        height: calc(100vh - 63px);
-        min-height: 600px;
+        height: 500px;
         #mainbanner-swiper{
             .swiper-wrapper{
                 .swiper-slide01, .swiper-slide02, .swiper-slide03{
                     .mainbanner-text01, .mainbanner-text02, .mainbanner-text03{
                         padding: 0 20px;
-                        top: 46%;
+                        top: 30%;
                         button{
                             margin-top: 34px;
                             padding: 6px 20px;
@@ -4730,8 +4703,7 @@ body {
                         height: auto;
                         .slide-left01, .slide-left02, .slide-left03{
                             width: 100%;
-                            height: 500px;
-                            max-height: none;
+                            height: 650px;
                             .best-left-text{
                                 left: 20px;
                                 bottom: 24px;
@@ -4748,7 +4720,7 @@ body {
                         }
                         .slide-right01, .slide-right02, .slide-right03{
                             width: 100%;
-                            height: 100%;
+                            height: 650px;
                             max-height: none;
                             .best-right-box{
                                 margin-bottom: 60px;
@@ -4771,6 +4743,7 @@ body {
             }
         }
     }
+
     #new-product{
         padding: 0 20px;
         .new-title {
@@ -4782,9 +4755,13 @@ body {
             }
         }
         #new-product-swiper{
-            height: 500px;
+            display: none;
+        }
+        #new-product-swiper.new-swiper-768{
+            display: block;
         }
     } 
+
     #brandevents{
         padding: 0 20px;
         .brandevents-title {
@@ -5131,22 +5108,26 @@ body {
         bottom: 40px;
         left: 25%;
     }
-    #mainbanner #mainbanner-swiper .swiper-button-next {
-        right: 68px;
-        --swiper-navigation-size: 16px;
-    }
+    #mainbanner #mainbanner-swiper{
+        .swiper-button-next {
+            right: 68px;
+            --swiper-navigation-size: 16px;
+        }
+        .swiper-scrollbar {
+            bottom: var(--swiper-scrollbar-bottom, 74px);
+        }
+    } 
     #mainbanner #mainbanner-swiper .swiper-button-prev {
         right: 134px;
         --swiper-navigation-size: 16px;
     }
-    #mainbanner .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
-        .swiper-pagination-current{
-            font-size: 26px;
+    #mainbanner{
+        height: 450px;
+        .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
+            right: 40px;
+            bottom: 30px;
         }
-        .swiper-pagination-total{
-            font-size: 14px;
-        }
-    }
+    } 
     
     #best-seller{
         .best-seller-title{
@@ -5167,7 +5148,6 @@ body {
                 .slide-left01{
                     width: 100%;
                     height: 500px;
-                    min-height: 500px;
                     .best-left-text {
                         left: 20px;
                         bottom: 40px;
@@ -5175,8 +5155,7 @@ body {
                 }
                 .slide-right01 {
                     width: 100%;
-                    height: 400px;
-                    min-height: 400px;
+                    height: 500px;
                     .best-right-box{
                         margin-top: 72px;
                         img{
@@ -5324,6 +5303,10 @@ body {
         }
         .posts-contents {
             padding: 20px;
+            .posts-more-btn {
+                padding: 24px 0;
+                margin: 0;
+            }
         }
     }
     #custom-beauty{
@@ -5461,9 +5444,35 @@ body {
     html, body{
         font-size: 10px;
     }
-    #new-product #new-product-swiper {
-        height: 400px;
+    #mainbanner{
+        height: 390px;
     }
+
+    #best-seller #best-seller-swiper {
+        height: 900px;
+        .swiper-wrapper {
+            .best-swiper-slide01, .best-swiper-slide02, .best-swiper-slide03{
+                .slide-total{
+                    .slide-left01, .slide-left02, .slide-left03 {
+                        height: 450px;
+                    }
+                } 
+            }
+        }
+    }
+
+    #new-product{
+        #new-product-swiper.new-swiper-origin {
+            display: none;
+        }
+        #new-product-swiper.new-swiper-768 {
+            display: none;
+        }
+        #new-product-swiper.new-swiper-480{
+            display: block;
+        }
+    } 
+
     #middlebanner .mainbanner-box{
         height: 100px;
         .middlebanner-container{
@@ -5543,12 +5552,39 @@ body {
     }
 }
 
+@media (max-width: 385px){
+    #mainbanner{
+        #mainbanner-swiper .swiper-scrollbar {
+            bottom: var(--swiper-scrollbar-bottom, 70px);
+        }
+        .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
+            right: 22px;
+            bottom: 30px;
+        }
+    } 
+}
+
 @media (max-width: 375px){
     #new-product #new-product-swiper {
         height: 530px;
     }
     #sub-best #sub-best-swiper {
         height: 590px;
+    }
+    #best-seller #best-seller-swiper {
+        height: 720px;
+        .swiper-wrapper {
+            .best-swiper-slide01, .best-swiper-slide02, .best-swiper-slide03{
+                .slide-total{
+                    .slide-left01, .slide-left02, .slide-left03 {
+                        height: 360px;
+                    }
+                    .slide-right01, .slide-right02, .slide-right03{
+                        height: 360px;
+                    }
+                } 
+            }
+        }
     }
 }
 
@@ -5565,5 +5601,22 @@ body {
 @media (max-width: 320px){
     #new-product #new-product-swiper {
         height: 470px;
+    }
+    #mainbanner #mainbanner-swiper .swiper-wrapper{
+        .swiper-slide02, .swiper-slide03{
+            .mainbanner-text02, .mainbanner-text03{
+                top: 20%;
+                h2 {
+                    font-size: 2.8rem;
+                }
+            }
+        } 
+        .swiper-slide01{
+            .mainbanner-text01{
+                h2 {
+                    font-size: 2.8rem;
+                }
+            }
+        }
     }
 }

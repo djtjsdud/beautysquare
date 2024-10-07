@@ -100,3 +100,22 @@ $.when.apply(null, promises).done(function () {
     this.play();
   });
 });
+
+// 검색창
+
+document.querySelector(".second-icon").onclick = function() {
+    document.querySelector(".search-container").style.display = "flex";
+};
+
+document.querySelector("#search-close").onclick = function() {
+    document.querySelector(".search-container").style.display = "none";
+};
+
+// 클릭 외부에서 팝업 닫기
+window.onclick = function(event) {
+    const popup = document.querySelector(".search-container");
+    if (event.target === popup) {
+        popup.style.display = "none";
+    }
+};
+

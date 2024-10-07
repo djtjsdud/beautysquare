@@ -57,28 +57,6 @@ var swiper_new = new Swiper("#new-product-swiper", {
         nextEl: "#new-product .new-swiper-button-next",
         prevEl: "#new-product .new-swiper-button-prev",
     },
-    // breakpoints: {
-    //     100: {
-    //         slidesPerGroup: 1,
-    //         slidesPerView: 1,
-    //         spaceBetween: 10,
-    //     },
-    //     400: {
-    //         slidesPerGroup: 2,
-    //         slidesPerView: 2,
-    //         spaceBetween: 20,
-    //     },
-    //     580: {
-    //         slidesPerGroup: 3,
-    //         slidesPerView: 3,
-    //         spaceBetween: 30,
-    //     },
-    //     990: {
-    //         slidesPerGroup: 5,
-    //         slidesPerView: 5,
-    //         spaceBetween: 30,
-    //     },
-    // },
 
     breakpoints: {
         320: {
@@ -96,12 +74,7 @@ var swiper_new = new Swiper("#new-product-swiper", {
             slidesPerView: 3,
             spaceBetween: 30,
         },
-        1024: {
-            slidesPerGroup: 4,
-            slidesPerView: 4,
-            spaceBetween: 30,
-        },
-        1280: {
+        990: {
             slidesPerGroup: 5,
             slidesPerView: 5,
             spaceBetween: 30,
@@ -110,13 +83,14 @@ var swiper_new = new Swiper("#new-product-swiper", {
     
 });
 
+
 // ////////////////////////////////////////맞춤형 추천
 var swiper_custom = new Swiper("#custom-swiper", {
     slidesPerView: 1,
     slidesPerGroup : 1,
     spaceBetween: 20,
-    // loop: true,
-    freeMode: true,
+    loop: true,
+    // freeMode: true,
     pagination: {
         el: "#custom-swiper .custom-swiper-pagination",
         clickable: true,

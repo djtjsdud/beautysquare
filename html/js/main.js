@@ -119,3 +119,36 @@ window.onclick = function(event) {
     }
 };
 
+// 장바구니, 위시 얼럿창
+
+document.querySelectorAll('.action-menu-button button, .brandevents-action-button button').forEach(button => {
+    button.addEventListener('click', function() {
+        // 버튼의 텍스트에 따라 다른 메시지를 표시
+        const buttonText = this.textContent;
+        if (buttonText === 'ADD') {
+            alert('장바구니에 담겼습니다.');
+        } else if (buttonText === 'WISH') {
+            alert('위시리스트에 추가되었습니다.');
+        }
+    });
+});
+
+// 보더 애니메이션
+
+document.addEventListener("DOMContentLoaded", function () {
+    const span = document.querySelector('.animate');
+  
+    // Intersection Observer 설정
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          span.querySelector('::after').style.animation = 'expand 1s ease forwards'; // 애니메이션 추가
+          observer.unobserve(entry.target); // 관찰 중지
+        }
+      });
+    });
+  
+    // span 요소를 관찰
+    observer.observe(span);
+  });
+  

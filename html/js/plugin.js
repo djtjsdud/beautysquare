@@ -90,6 +90,10 @@ var swiper_custom = new Swiper("#custom-swiper", {
     slidesPerGroup : 1,
     spaceBetween: 20,
     loop: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
     // freeMode: true,
     pagination: {
         el: "#custom-swiper .custom-swiper-pagination",

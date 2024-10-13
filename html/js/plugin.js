@@ -182,3 +182,5 @@ document.addEventListener("DOMContentLoaded", function() {
     // 관찰할 요소 추가
     observer.observe(img);
 });
+
+

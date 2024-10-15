@@ -1,75 +1,78 @@
 <?php include_once("../layout/header.html"); ?>
 
-<h1>Shopping Cart</h1>
+<div id="shopping-cart-all">
+  <h3>SHOPPING CART</h3>
 
-<div class="shopping-cart">
+  <div class="shopping-cart">
 
-  <div class="column-labels">
-    <label class="product-image">Image</label>
-    <label class="product-details">Product</label>
-    <label class="product-price">금액</label>
-    <label class="product-quantity">수량</label>
-    <label class="product-removal">Remove</label>
-    <label class="product-line-price">총 상품 금액</label>
+    <div class="column-labels">
+      <label class="product-image">Image</label>
+      <label class="product-details">Product</label>
+      <label class="product-price">금액</label>
+      <label class="product-quantity">수량</label>
+      <label class="product-removal">Remove</label>
+      <label class="product-line-price">총 상품 금액</label>
+    </div>
+
+    <div class="product">
+      <div class="product-image">
+        <img src="../images/new-product02.png">
+      </div>
+      <div class="product-details">
+        <div class="product-title">힌스 듀이 리퀴드 치크</div>
+        <p class="product-description">11.15(금) 이내 발송 예정 </p>
+      </div>
+      <div class="product-price">15,343원</div>
+      <div class="product-quantity">
+        <input type="number" value="2" min="1">
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          상품삭제
+        </button>
+      </div>
+      <div class="product-line-price">30,686원</div>
+    </div>
+
+    <div class="product">
+      <div class="product-image">
+        <img src="../images/new-product10.jpg">
+      </div>
+      <div class="product-details">
+        <div class="product-title">피브 리프레싱 핸드 밤 50ml</div>
+        <p class="product-description">내일(수) 이내 발송 예정</p>
+      </div>
+      <div class="product-price">15,000원</div>
+      <div class="product-quantity">
+        <input type="number" value="1" min="1">
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          상품삭제
+        </button>
+      </div>
+      <div class="product-line-price">15,000원</div>
+    </div>
+
+    <div class="totals">
+      <div class="totals-item">
+        <label>상품 금액</label>
+        <div class="totals-value" id="cart-subtotal">45,686</div>
+      </div>
+      <div class="totals-item">
+        <label>배송비</label>
+        <div class="totals-value" id="cart-shipping">3000원</div>
+      </div>
+      <div class="totals-item totals-item-total">
+        <label>총 결제 금액</label>
+        <div class="totals-value" id="cart-total">48,686원</div>
+      </div>
+    </div>
+        
+        <button class="checkout">구매하기</button>
+
   </div>
-
-  <div class="product">
-    <div class="product-image">
-      <img src="../images/new-product02.png">
-    </div>
-    <div class="product-details">
-      <div class="product-title">힌스 듀이 리퀴드 치크</div>
-      <p class="product-description">11.15(금) 이내 발송 예정 </p>
-    </div>
-    <div class="product-price">15,343원</div>
-    <div class="product-quantity">
-      <input type="number" value="2" min="1">
-    </div>
-    <div class="product-removal">
-      <button class="remove-product">
-        상품삭제
-      </button>
-    </div>
-    <div class="product-line-price">30,686원</div>
-  </div>
-
-  <div class="product">
-    <div class="product-image">
-      <img src="../images/new-product10.jpg">
-    </div>
-    <div class="product-details">
-      <div class="product-title">피브 리프레싱 핸드 밤 50ml</div>
-      <p class="product-description">내일(수) 이내 발송 예정</p>
-    </div>
-    <div class="product-price">15,000원</div>
-    <div class="product-quantity">
-      <input type="number" value="1" min="1">
-    </div>
-    <div class="product-removal">
-      <button class="remove-product">
-        상품삭제
-      </button>
-    </div>
-    <div class="product-line-price">15,000원</div>
-  </div>
-
-  <div class="totals">
-    <div class="totals-item">
-      <label>상품 금액</label>
-      <div class="totals-value" id="cart-subtotal">45,686</div>
-    </div>
-    <div class="totals-item">
-      <label>배송비</label>
-      <div class="totals-value" id="cart-shipping">3000원</div>
-    </div>
-    <div class="totals-item totals-item-total">
-      <label>총 결제 금액</label>
-      <div class="totals-value" id="cart-total">48,686원</div>
-    </div>
-  </div>
-      
-      <button class="checkout">구매하기</button>
-
 </div>
+
 
 <?php include_once("../layout/footer.html"); ?>

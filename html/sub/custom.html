@@ -1,0 +1,224 @@
+<?php include_once("../layout/header.html"); ?>
+
+<div id="sub-custom">
+    <div class="sub-custom-text">
+        <h3>YOUR CUSTOM BEAUTY</h3>
+        <span>당신에게 꼭 맞는 제품을 추천드려요.</span>
+    </div>
+
+    <div class="category">
+        <h4>제품 카테고리</h4>
+        <div class="button-group">
+            <button>스킨케어</button>
+            <button>메이크업</button>
+            <button>헤어케어</button>
+            <button>바디케어</button>
+        </div>
+    </div>
+
+    <div class="skin-type">
+        <h4>피부 타입</h4>
+        <div class="button-group">
+            <button>건성</button>
+            <button>지성</button>
+            <button>복합성</button>
+            <button>민감성</button>
+        </div>
+    </div>
+
+    <div class="skin-tone">
+        <h4>피부 톤</h4>
+        <div class="button-group">
+            <button>밝은</button>
+            <button>중간</button>
+            <button>어두운</button>
+            <button>올리브</button>
+        </div>
+    </div>
+
+    <div class="color-preference">
+        <h4>퍼스널 컬러 & 선호하는 컬러</h4>
+        <div class="spring-color color-parent">
+            <button class="pink color-btn" onclick="showOptions('pink', this)">봄</button>
+            <span class="arrow">&#9654;</span> <!-- 화살표를 버튼과 options 사이에 추가 -->
+            <div class="options" id="pink-options">
+                <button class="option">봄 웜</button>
+                <button class="option">봄 브라이트</button>
+                <button class="option">봄 라이트</button>
+            </div>
+        </div>
+        <div class="summer-color color-parent">
+            <button class="navy color-btn" onclick="showOptions('navy', this)">여름</button>
+            <span class="arrow">&#9654;</span>
+            <div class="options" id="navy-options">
+                <button class="option">여름 쿨</button>
+                <button class="option">여름 쿨 뮤트</button>
+                <button class="option">여름 쿨 라이트</button>
+            </div>
+        </div>
+        <div class="fall-color color-parent">
+            <button class="coral color-btn" onclick="showOptions('coral', this)">가을</button>
+            <span class="arrow">&#9654;</span>
+            <div class="options" id="coral-options">
+                <button class="option">가을 웜</button>
+                <button class="option">가을 웜 뮤트</button>
+                <button class="option">가을 웜 딥</button>
+            </div>
+        </div>
+        <div class="winter-color color-parent">
+            <button class="beige color-btn" onclick="showOptions('beige', this)">겨울</button>
+            <span class="arrow">&#9654;</span>
+            <div class="options" id="beige-options">
+                <button class="option">겨울 쿨</button>
+                <button class="option">겨울 쿨 브라이트</button>
+                <button class="option">겨울 쿨 딥</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="rb-box">
+
+        <!-- Radio Button Module -->
+        <p>1. 피부가 번들거리는 편인가요?</p>
+        <div id="rb-1" class="rb">
+          <div class="rb-tab rb-tab-active" data-value="1">
+            <div class="rb-spot">
+              <span class="rb-txt">1</span>
+            </div>
+          </div><div class="rb-tab" data-value="2">
+            <div class="rb-spot">
+              <span class="rb-txt">2</span>
+            </div>
+          </div><div class="rb-tab" data-value="3">
+            <div class="rb-spot">
+              <span class="rb-txt">3</span>
+            </div>
+          </div><div class="rb-tab" data-value="4">
+            <div class="rb-spot">
+              <span class="rb-txt">4</span>
+            </div>
+          </div><div class="rb-tab" data-value="5">
+            <div class="rb-spot">
+              <span class="rb-txt">5</span>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Radio Button Module -->
+        <p>2. 세안 직후 제품을 사용하지 않으면 피부가 당겨요.</p>
+        <div id="rb-2" class="rb">
+          <div class="rb-tab" data-value="1">
+            <div class="rb-spot">
+              <span class="rb-txt">1</span>
+            </div>
+          </div><div class="rb-tab rb-tab-active" data-value="2">
+            <div class="rb-spot">
+              <span class="rb-txt">2</span>
+            </div>
+          </div><div class="rb-tab" data-value="3">
+            <div class="rb-spot">
+              <span class="rb-txt">3</span>
+            </div>
+          </div><div class="rb-tab" data-value="4">
+            <div class="rb-spot">
+              <span class="rb-txt">4</span>
+            </div>
+          </div><div class="rb-tab" data-value="5">
+            <div class="rb-spot">
+              <span class="rb-txt">5</span>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Radio Button Module -->
+        <p>3. 여드름이나 뾰루지가 종종 생기는 편이에요.</p>
+        <div id="rb-3" class="rb">
+          <div class="rb-tab" data-value="1">
+            <div class="rb-spot">
+              <span class="rb-txt">1</span>
+            </div>
+          </div><div class="rb-tab" data-value="2">
+            <div class="rb-spot">
+              <span class="rb-txt">2</span>
+            </div>
+          </div><div class="rb-tab rb-tab-active" data-value="3">
+            <div class="rb-spot">
+              <span class="rb-txt">3</span>
+            </div>
+          </div><div class="rb-tab" data-value="4">
+            <div class="rb-spot">
+              <span class="rb-txt">4</span>
+            </div>
+          </div><div class="rb-tab" data-value="5">
+            <div class="rb-spot">
+              <span class="rb-txt">5</span>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Radio Button Module -->
+        <p>4. 환절기에 피부가 가렵거나 각질이 생겨요.</p>
+        <div id="rb-4" class="rb">
+          <div class="rb-tab" data-value="1">
+            <div class="rb-spot">
+              <span class="rb-txt">1</span>
+            </div>
+          </div><div class="rb-tab" data-value="2">
+            <div class="rb-spot">
+              <span class="rb-txt">2</span>
+            </div>
+          </div><div class="rb-tab" data-value="3">
+            <div class="rb-spot">
+              <span class="rb-txt">3</span>
+            </div>
+          </div><div class="rb-tab rb-tab-active" data-value="4">
+            <div class="rb-spot">
+              <span class="rb-txt">4</span>
+            </div>
+          </div><div class="rb-tab" data-value="5">
+            <div class="rb-spot">
+              <span class="rb-txt">5</span>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Radio Button Module -->
+        <p>5. 피부톤이 전체적으로 어둡고 칙칙한 편인가요?</p>
+        <div id="rb-5" class="rb">
+          <div class="rb-tab" data-value="4">
+            <div class="rb-spot">
+              <span class="rb-txt">4</span>
+            </div>
+          </div><div class="rb-tab" data-value="2">
+            <div class="rb-spot">
+              <span class="rb-txt">2</span>
+            </div>
+          </div><div class="rb-tab" data-value="5">
+            <div class="rb-spot">
+              <span class="rb-txt">5</span>
+            </div>
+          </div><div class="rb-tab" data-value="1">
+            <div class="rb-spot">
+              <span class="rb-txt">1</span>
+            </div>
+          </div><div class="rb-tab rb-tab-active" data-value="3">
+            <div class="rb-spot">
+              <span class="rb-txt">3</span>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Button -->
+        <div class="button-box">
+          <button class="button trigger">Submit!</button>
+        </div>
+      
+      </div>
+    
+    
+    
+</div>
+
+
+
+<?php include_once("../layout/footer.html"); ?>

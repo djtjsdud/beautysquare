@@ -44,13 +44,93 @@ var best_swiper = new Swiper("#best-seller-swiper", {
 });
 
 //신제품
-var swiper_new = new Swiper("#new-product-swiper", {
+var swiper_new = new Swiper("#new-swiper-origin", {
     slidesPerView: 4,
     slidesPerGroup: 4,
     spaceBetween: 30,
     loop: true,
     pagination: {
-        el: "#new-product-swiper .new-swiper-pagination",
+        el: "#new-swiper-origin .new-swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: "#new-product .new-swiper-button-next",
+        prevEl: "#new-product .new-swiper-button-prev",
+    },
+
+    breakpoints: {
+        320: {
+            slidesPerGroup: 1,
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        480: {
+            slidesPerGroup: 2,
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerGroup: 3,
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        990: {
+            slidesPerGroup: 5,
+            slidesPerView: 5,
+            spaceBetween: 30,
+        },
+    },
+    
+});
+
+//신제품
+var swiper_new = new Swiper("#new-swiper-768", {
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: "#new-swiper-768 .new-swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: "#new-product .new-swiper-button-next",
+        prevEl: "#new-product .new-swiper-button-prev",
+    },
+
+    breakpoints: {
+        320: {
+            slidesPerGroup: 1,
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        480: {
+            slidesPerGroup: 2,
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerGroup: 3,
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        990: {
+            slidesPerGroup: 5,
+            slidesPerView: 5,
+            spaceBetween: 30,
+        },
+    },
+    
+});
+
+//신제품
+var swiper_new = new Swiper("#new-swiper-480", {
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: "#new-swiper-480 .new-swiper-pagination",
         clickable: true,
     },
     navigation: {

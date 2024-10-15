@@ -152,3 +152,111 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(span);
   });
   
+
+//  맞춤평 페이지
+
+function showOptions(color, button) {
+    // 모든 옵션 숨김
+    const options = document.querySelectorAll('.options');
+    options.forEach(option => {
+        option.style.display = 'none';
+        option.classList.remove('show');
+    });
+
+    // 클릭한 버튼의 옵션 표시
+    const selectedOptions = document.getElementById(`${color}-options`);
+    if (selectedOptions) {
+        const isVisible = selectedOptions.style.display === 'block';
+        selectedOptions.style.display = isVisible ? 'none' : 'block';
+        selectedOptions.classList.toggle('show', !isVisible);
+    }
+
+    // 클릭한 버튼의 배경색을 변경
+    button.style.backgroundColor = '#3a3a3a';
+
+    // 다른 버튼의 배경색 초기화
+    const buttons = document.querySelectorAll('.color-parent > button');
+    buttons.forEach(btn => {
+        if (btn !== button) {
+            btn.style.backgroundColor = ''; // 원래 색으로 초기화
+        }
+    });
+}
+
+// 버튼 그룹의 단일 선택 유지
+document.querySelectorAll('.button-group').forEach(group => {
+    group.addEventListener('click', function(event) {
+        if (event.target.tagName === 'BUTTON') {
+            const buttons = group.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.style.backgroundColor = ''; // 모든 버튼 초기화
+            });
+            event.target.style.backgroundColor = '#3a3a3a'; // 클릭한 버튼 색 변경
+        }
+    });
+});
+
+// 각 옵션 버튼에 클릭 이벤트 추가
+document.querySelectorAll('.options .option').forEach(option => {
+    option.addEventListener('click', function() {
+        this.style.backgroundColor = '#3a3a3a';
+
+        // 다른 옵션은 원래 색으로 초기화
+        const options = this.parentElement.querySelectorAll('.option');
+        options.forEach(opt => {
+            if (opt !== this) {
+                opt.style.backgroundColor = ''; // 원래 색으로 초기화
+            }
+        });
+    });
+});
+
+// 맞춤형 설문조사
+
+/*
+===============================================================
+
+Hi! Welcome to my little playground!
+
+My name is Tobias Bogliolo. 'Open source' by default and always 'responsive',
+I'm a publicist, visual designer and frontend developer based in Barcelona. 
+
+Here you will find some of my personal experiments. Sometimes usefull,
+sometimes simply for fun. You are free to use them for whatever you want 
+but I would appreciate an attribution from my work. I hope you enjoy it.
+
+===============================================================
+*/
+//Global:
+var survey = []; //Bidimensional array: [ [1,3], [2,4] ]
+
+//Switcher function:
+$(".rb-tab").click(function(){
+  //Spot switcher:
+  $(this).parent().find(".rb-tab").removeClass("rb-tab-active");
+  $(this).addClass("rb-tab-active");
+});
+
+//Save data:
+$(".trigger").click(function(){
+  //Empty array:
+  survey = [];
+  //Push data:
+  for (i=1; i<=$(".rb").length; i++) {
+    var rb = "rb" + i;
+    var rbValue = parseInt($("#rb-"+i).find(".rb-tab-active").attr("data-value"));
+    //Bidimensional array push:
+    survey.push([i, rbValue]); //Bidimensional array: [ [1,3], [2,4] ]
+  };
+  //Debug:
+  debug();
+});
+
+//Debug:
+function debug(){
+  var debug = "";
+  for (i=0; i<survey.length; i++) {
+    debug += "Nº " + survey[i][0] + " = " + survey[i][1] + "\n";
+  };
+  alert(debug);
+};
